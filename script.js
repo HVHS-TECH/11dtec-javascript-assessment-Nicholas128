@@ -11,11 +11,11 @@ console.log("Running project Neural DSP site")
   Functions
   ****************/
  function buyNow() {
-    spaceForJavaScriptOutput.innterHTML
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");  
 
     function buyArchetypeGojira() {
     const item = document.getElementById("buyArchetypeGojira").value;
-  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
     }
  }
 
