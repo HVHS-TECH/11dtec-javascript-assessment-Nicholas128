@@ -10,5 +10,7 @@ console.log("Running project Neural DSP site")
  /****************
   Functions
   ****************/
- function
+ function buyNow() {
+    spaceForJavaScriptOutput.innterHTML
+ }
 
