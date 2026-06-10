@@ -12,5 +12,9 @@ console.log("Running project Neural DSP site")
   ****************/
  function buyNow() {
     spaceForJavaScriptOutput.innterHTML
+
+    function buyArchetypeGojira() {
+        
+    }
  }
 
