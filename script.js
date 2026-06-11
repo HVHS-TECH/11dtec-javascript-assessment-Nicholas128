@@ -22,7 +22,7 @@ function showForm() {
     
     if (item == "256") {
         OUTPUT.innerHTML = "You have entered the correct amount of Money";
-            console.log("Correct amount of money has been entered")
+            console.log("Correct amount of money has been entered")  
     }
 
     }
