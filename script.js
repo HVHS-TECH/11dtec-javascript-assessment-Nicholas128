@@ -20,7 +20,7 @@ function showForm() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     
     if (item == "256") {
-        OUTPUT.innerHTML += "You have entered the correct amount of Money";
+        OUTPUT.innerHTML = "You have entered the correct amount of Money";
     }
 
     }
