@@ -12,7 +12,7 @@ console.log("Running project Neural DSP site")
   ****************/ 
 
     function buyArchetypeGojira() {
-    const item = document.getElementById("buyArchetypeGojira").value;
+    const item = document.getElementById("buyArchetypeGojiraField").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     
     if (item == "256") {
