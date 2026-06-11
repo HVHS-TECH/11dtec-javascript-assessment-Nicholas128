@@ -10,9 +10,8 @@ console.log("Running project Neural DSP site")
  /****************
   Functions
   ****************/ 
- function buyNow(){
- const item = document.getElementById("buyNow").value;
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+
 
     function buyArchetypeGojira() {
     const item = document.getElementById("buyArchetypeGojiraField").value;
@@ -24,7 +23,7 @@ console.log("Running project Neural DSP site")
 
     }
     
- }
+ 
 
  
 
