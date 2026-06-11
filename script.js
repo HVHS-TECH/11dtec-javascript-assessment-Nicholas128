@@ -12,6 +12,7 @@ console.log("Running project Neural DSP site")
   ****************/ 
 function showForm() {
     document.getElementById("buyArchetypeGojiraField").style.display = "block";
+    console.log("Displaying form")
 }
 
 
@@ -21,6 +22,7 @@ function showForm() {
     
     if (item == "256") {
         OUTPUT.innerHTML = "You have entered the correct amount of Money";
+            console.log("Correct amount of money has been entered")
     }
 
     }
