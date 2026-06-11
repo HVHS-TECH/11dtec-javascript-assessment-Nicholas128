@@ -10,7 +10,9 @@ console.log("Running project Neural DSP site")
  /****************
   Functions
   ****************/ 
-
+function showForm() {
+    document.getElementById("buyArchetypeGojiraField").value
+}
 
 
     function buyArchetypeGojira() {
