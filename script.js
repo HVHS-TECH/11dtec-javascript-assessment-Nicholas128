@@ -6,6 +6,7 @@ console.log("Running project Neural DSP site")
  ****************/
 var now = new Date().getTime();
 
+const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
 
  /****************
   Functions
@@ -27,6 +28,7 @@ function showForm() {
 
     }
     
+    CountDownDays
  
 
  
