@@ -4,7 +4,7 @@ console.log("Running project Neural DSP site")
 /*****************
  Main code
  ****************/
-var now = new Date().get
+var now = new Date().getTime();
 
 
  /****************
