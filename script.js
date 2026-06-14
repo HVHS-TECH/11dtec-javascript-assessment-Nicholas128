@@ -21,13 +21,11 @@ function showForm() {
     
     if (item == "256") {
         OUTPUT.innerHTML = "You have entered the correct amount of money";
-            console.log("Correct amount of money has been entered")  
+       onsole.log("Correct amount of money has been entered")  
     }
 
     else {
-    OUTPUT.innerHTML += "Incorrect amount of money entered"
-
-    
+    OUTPUT.innerHTML += "Incorrect amount of money entered";
     }
 
 
