@@ -8,7 +8,7 @@ console.log("Running project Neural DSP site")
 
  /****************
   Functions
-  ****************/ 
+  ****************/    
 function showForm() {
     document.getElementById("buyArchetypeGojiraField").style.display = "block";
     console.log("Displaying form")
