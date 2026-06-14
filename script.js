@@ -28,7 +28,7 @@ function showForm() {
 
 
     
-    CountDownDays() {
+    function CountDownDays() {
     const item = document.getElementById("trialField").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     var now = new Date().getTime();
