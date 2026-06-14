@@ -24,7 +24,7 @@ function showForm() {
             console.log("Correct amount of money has been entered")  
     }
 
-    else (item < "256") 
+    else {
     OUTPUT.innerHTML += "Incorrect amount of money entered"
 
     
@@ -41,4 +41,4 @@ function showForm() {
  
 
  
-
+    }
