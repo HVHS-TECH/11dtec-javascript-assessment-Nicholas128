@@ -20,10 +20,14 @@ function showForm() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     
     if (item == "256") {
-        OUTPUT.innerHTML = "You have entered the correct amount of Money";
+        OUTPUT.innerHTML = "You have entered the correct amount of money";
             console.log("Correct amount of money has been entered")  
     }
 
+    else (item < "256") 
+    OUTPUT.innerHTML += "Incorrect amount of money entered"
+
+    
     }
 
 
