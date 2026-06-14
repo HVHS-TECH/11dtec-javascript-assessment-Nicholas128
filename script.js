@@ -10,7 +10,7 @@ console.log("Running project Neural DSP site")
   Functions
   ****************/ 
 function showForm() {
-    document.getElementById("buyArchetypeGojiraField").
+    document.getElementById("buyArchetypeGojiraField").style.display = "block";
     console.log("Displaying form")
 }
 
@@ -32,7 +32,7 @@ function showForm() {
 
     
     function CountDownDays() {
-    const item = document.getElementById("countDownDays").
+    const item = document.getElementById("countDownDays").style.display = "block";
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     var now = new Date().getTime();
     const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
