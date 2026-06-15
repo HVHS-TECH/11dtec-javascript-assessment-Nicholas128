@@ -26,6 +26,7 @@ function showForm() {
 
     else {
     OUTPUT.innerHTML += "Incorrect amount of money entered";
+    console.log("inncorrect amount of money has been entered")
     }
 
     }
