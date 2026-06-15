@@ -16,17 +16,14 @@ function showForm() {
 
 
 function getFormInput() {
-    const choice = document.getElementById("moneyField").value;
+    const money = document.getElementById("moneyField").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    var number = "256";
-    var money = MONEY_FIELD.value;
-    
 
     if (money == "256") {
-        OUTPUT.innerHTML = "<p>You have entered the correct amount of money $"+money+"</p>";
+        OUTPUT.innerHTML = "<p>You have entered the correct amount of money $" + money + "</p>";
         console.log("Correct amount of money has been entered");
     } else {
-        OUTPUT.innerHTML = "<p>Incorrect amount of money entered $"+money+"</p>";
+        OUTPUT.innerHTML = "<p>Incorrect amount of money entered $" + money + "</p>";
         console.log("Incorrect amount of money has been entered");
     }
 }
