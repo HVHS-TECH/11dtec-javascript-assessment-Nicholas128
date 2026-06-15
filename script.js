@@ -23,12 +23,12 @@ function showForm() {
     
     
 
-    if (number == "256") {
-    OUTPUT.innerHTML = "You have entered the correct amount of money";
+    if (choice == "256") {
+    OUTPUT.innerHTML = "You have entered the correct amount of money $" +choice;
     console.log("Correct amount of money has been entered");
     } 
-    else {
-    OUTPUT.innerHTML = "Incorrect amount of money entered";
+    else if (choice != "256") {
+    OUTPUT.innerHTML = "Incorrect amount of money entered $"+choice;
     console.log("Incorrect amount of money has been entered");
     }
 
