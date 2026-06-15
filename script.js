@@ -24,11 +24,11 @@ function showForm() {
     
 
     if (choice == "256") {
-    OUTPUT.innerHTML = "You have entered the correct amount of money $" +choice;
+    OUTPUT.innerHTML = "You have entered the correct amount of money $" +choice+"<br>";
     console.log("Correct amount of money has been entered");
     } 
     else if (choice != "256") {
-    OUTPUT.innerHTML = "Incorrect amount of money entered $"+choice;
+    OUTPUT.innerHTML = "Incorrect amount of money entered $"+choice+"<br>";
     console.log("Incorrect amount of money has been entered");
     }
 
