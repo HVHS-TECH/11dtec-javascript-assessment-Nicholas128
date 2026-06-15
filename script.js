@@ -18,6 +18,7 @@ function showForm() {
 function buyArchetypeGojira() {
     const choice = document.getElementById("buyArchetypeGojiraField").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    
 
     if (choice == "256") {
         OUTPUT.innerHTML = "You have entered the correct amount of money $" + choice + "<br>";
