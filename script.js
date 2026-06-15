@@ -15,18 +15,18 @@ function showForm() {
 }
 
 
-function buyArchetypeGojira() {
+function getFormInput() {
     const choice = document.getElementById("moneyField").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     var number = "256";
-    var number = MONEY_FIELD.value;
+    var money = MONEY_FIELD.value;
     
 
-    if (number == "256") {
-        OUTPUT.innerHTML = "You have entered the correct amount of money";
+    if (money == "256") {
+        OUTPUT.innerHTML = "<p>You have entered the correct amount of money $"+money+"</p>";
         console.log("Correct amount of money has been entered");
     } else {
-        OUTPUT.innerHTML = "Incorrect amount of money entered";
+        OUTPUT.innerHTML = "<p>Incorrect amount of money entered $"+money+"</p>";
         console.log("Incorrect amount of money has been entered");
     }
 }
