@@ -18,13 +18,14 @@ function showForm() {
 function buyArchetypeGojira() {
     const choice = document.getElementById("buyArchetypeGojiraField").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    var number = "256";
     
 
-    if (choice == "256") {
-        OUTPUT.innerHTML = "You have entered the correct amount of money $" + choice + "<br>";
+    if (number === "256") {
+        OUTPUT.innerHTML = "You have entered the correct amount of money";
         console.log("Correct amount of money has been entered");
     } else {
-        OUTPUT.innerHTML = "Incorrect amount of money entered $" + choice + "<br>";
+        OUTPUT.innerHTML = "Incorrect amount of money entered";
         console.log("Incorrect amount of money has been entered");
     }
 }
