@@ -19,6 +19,7 @@ function showForm() {
     const item = document.getElementById("buyArchetypeGojiraField").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     var number = "256";
+    var choice = CHOOSE_FIELD.value
     
     
 
