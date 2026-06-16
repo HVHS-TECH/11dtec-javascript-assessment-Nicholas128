@@ -20,7 +20,7 @@ function getFormInput() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
     if (money == "256") {
-        OUTPUT.innerHTML = "<div class='positionText7'><p>Incorrect amount of money entered $" + money + "</p></div>";
+        OUTPUT.innerHTML = "<div class='positionText7'><p>You have entered the correct amount of money $" + money + "</p></div>";
         console.log("Correct amount of money has been entered");
     } else {
         OUTPUT.innerHTML = "<div class='positionText7'><p>Incorrect amount of money entered $" + money + "</p></div>";
