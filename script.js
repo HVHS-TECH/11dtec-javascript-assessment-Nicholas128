@@ -39,7 +39,8 @@ function getFormInput() {
     }
 
     function addToCart() {
-    OUTPUT.innerHTML += <p>Item sucessfully added to cart</p>    
+    OUTPUT.innerHTML = <p>Item added to cart</p> ;   
+    console.log("Item sucessfully added to cart");
     }
  
 
