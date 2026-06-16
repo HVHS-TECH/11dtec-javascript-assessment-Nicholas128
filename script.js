@@ -23,7 +23,7 @@ function getFormInput() {
         OUTPUT.innerHTML = "<p>You have entered the correct amount of money $" + money + "</p>";
         console.log("Correct amount of money has been entered");
     } else {
-        OUTPUT.innerHTML = "<div class="positionText7"><p>Incorrect amount of money entered $" + money + "</div></p>";
+        OUTPUT.innerHTML = "<div class='positionText7'><p>Incorrect amount of money entered $" + money + "</p></div>";
         console.log("Incorrect amount of money has been entered");
     }
 }
