@@ -39,6 +39,8 @@ function getFormInput() {
     }
 
     function addToCart() {
+    const item = document.getElementById("addItemToCart").style.display = "block";
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     OUTPUT.innerHTML = "<p>Incorrect amount of money entered</p>";  
     console.log("Item sucessfully added to cart");
     }
