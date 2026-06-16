@@ -17,7 +17,7 @@ function showForm() {
 
 function getFormInput() {
     const money = document.getElementById("moneyField").value;
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 
     if (money == "256") {
         OUTPUT.innerHTML = "<div class='positionText7'><p>You have sucessfully purched Archetype Gojira for $" + money + "</p></div>";
