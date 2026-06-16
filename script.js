@@ -37,6 +37,10 @@ function getFormInput() {
     var now = new Date().getTime();
     const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
     }
+
+    function addToCart() {
+        
+    }
  
 
  
