@@ -41,7 +41,7 @@ function getFormInput() {
     function addToCart() {
     const item = document.getElementById("addItemToCartField")
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    OUTPUT.innerHTML = "<p>Item added to cart</p>";  
+    OUTPUT.innerHTML = "<div class='positionText8'><p>Item added to cart</p></div>";  
     console.log("Item sucessfully added to cart");
     }
  
