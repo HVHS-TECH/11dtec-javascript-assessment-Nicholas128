@@ -69,7 +69,7 @@ function getFormInput() {
     outputText += "list " + i + ": " + classArray[i] + "<br>";
   }
 
-  OUTPUT.innerHTML = outputText;
+  <div class='positionText9'> OUTPUT.innerHTML = outputText</div>;
   
     }
  
