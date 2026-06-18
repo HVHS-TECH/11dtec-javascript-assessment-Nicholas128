@@ -56,7 +56,7 @@ function getFormInput() {
     outputText += "You have just added Archetype Gojira to your cart<br><br>";
      " </div>";
   }
-  else if (item == "butter") {
+  else if (item == "butter") {    
      "<div class='positionText9'>"
     outputText += "You have just added Archetype Petrucci to your cart<br><br>";
      " </div>";
