@@ -38,17 +38,12 @@ function getFormInput() {
     const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
     }
 
-    function addToCart() {
-    const item = document.getElementById("addItemToCartField")
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    OUTPUT.innerHTML = "<div class='positionText8'><p>Item added to cart</p></div>";  
-    console.log("Item sucessfully added to cart");
-    }
+ 
  
 
-    function itemsInCart() {
+    function addToCart() {
     
-  const item = document.getElementById("itemsInCartField").value;
+  const item = document.getElementById("addToCartField").value;
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
   var classArray = ["Archetype Gojira", "Archetype Petrucci", "Archetype Abasi"];
@@ -63,7 +58,7 @@ function getFormInput() {
     outputText += "You have just added Archetype Petrucci to your cart<br><br>";
   }
   else if (item == "milk") {
-    outputText += "You have just added milk to the shopping list<br><br>";
+    outputText += "You have just added Archetype Abasi to your cart<br><br>";
   }
 
 
