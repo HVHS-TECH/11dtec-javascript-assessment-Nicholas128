@@ -32,16 +32,16 @@ function getFormInput() {
 
     
     function CountDownDays() {
-    const item = document.getElementById("countDownDays").style.display = "block";
+    const item = document.getElementById("countDownDays")
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     var now = new Date().getTime();
     const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
     }
 
     function addToCart() {
-    const item = document.getElementById("addItemToCart").style.display = "block";
+    const item = document.getElementById("addItemToCartField")
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    OUTPUT.innerHTML = "<p>Incorrect amount of money entered</p>";  
+    OUTPUT.innerHTML = "<p>Item added to cart</p>";  
     console.log("Item sucessfully added to cart");
     }
  
