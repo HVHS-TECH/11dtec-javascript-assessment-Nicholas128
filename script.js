@@ -46,5 +46,36 @@ function getFormInput() {
     }
  
 
+    function itemsInCart() {
+    
+  const item = document.getElementById("itemsInCartField").value;
+  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+  var classArray = ["Archetype Gojira", "Archetype Petrucci", "Archetype Abasi"];
+
+  var outputText = "";
+
+
+  if (item == "Archetype Gojira") {
+    outputText += "You have just added Archetype Gojira to your cart<br><br>";
+  }
+  else if (item == "butter") {
+    outputText += "You have just added Archetype Petrucci to your cart<br><br>";
+  }
+  else if (item == "milk") {
+    outputText += "You have just added milk to the shopping list<br><br>";
+  }
+
+
+  outputText += "These are the items on your shopping list:<br>";
+
+
+  for (var i = 0; i < classArray.length; i++) {
+    outputText += "list " + i + ": " + classArray[i] + "<br>";
+  }
+
+  OUTPUT.innerHTML = outputText;
+  
+    }
  
     
