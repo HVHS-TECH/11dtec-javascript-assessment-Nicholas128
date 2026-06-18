@@ -61,15 +61,17 @@ function getFormInput() {
     outputText += "You have just added Archetype Abasi to your cart<br><br>";
   }
 
-
+ "<div class='positionText9'>"
   outputText += "These are the items on your cart:<br>";
-
+" </div>";
 
   for (var i = 0; i < classArray.length; i++) {
     outputText += "list " + i + ": " + classArray[i] + "<br>";
   }
 
-  <div class='positionText9'> OUTPUT.innerHTML = outputText</div>;
+ "<div class='positionText9'>"
+  OUTPUT.innerHTML = outputText
+ " </div>";
   
     }
  
