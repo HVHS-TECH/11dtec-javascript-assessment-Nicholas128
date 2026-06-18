@@ -62,7 +62,7 @@ function getFormInput() {
   }
 
 
-  outputText += "These are the items on your shopping list:<br>";
+  outputText += "These are the items on your cart:<br>";
 
 
   for (var i = 0; i < classArray.length; i++) {
