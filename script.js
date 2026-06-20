@@ -56,12 +56,12 @@ function getFormInput() {
     OUTPUT.innerHTML = "You have just added Archetype Gojira to your cart<br><br>";
      " </div>";
   }
-  else if (item == "butter") {    
+  else if (item == "Archetype Petrucci") {    
      "<div class='positionText9'>"
     OUTPUT.innerHTML += "You have just added Archetype Petrucci to your cart<br><br>";
      " </div>";
   }
-  else if (item == "milk") {
+  else if (item == "Archetype Abasi") {
      "<div class='positionText9'>"
     OUTPUT.innerHTML += "You have just added Archetype Abasi to your cart<br><br>";
     " </div>";
