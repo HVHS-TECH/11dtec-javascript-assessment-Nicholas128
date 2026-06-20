@@ -48,36 +48,34 @@ function getFormInput() {
 
   var classArray = ["Archetype Gojira", "Archetype Petrucci", "Archetype Abasi"];
 
-  var outputText = "";
+ 
 
 
   if (item == "Archetype Gojira") {
        "<div class='positionText9'>"
-    outputText += "You have just added Archetype Gojira to your cart<br><br>";
+    OUTPUT.innerHTML = "You have just added Archetype Gojira to your cart<br><br>";
      " </div>";
   }
   else if (item == "butter") {    
      "<div class='positionText9'>"
-    outputText += "You have just added Archetype Petrucci to your cart<br><br>";
+    OUTPUT.innerHTML += "You have just added Archetype Petrucci to your cart<br><br>";
      " </div>";
   }
   else if (item == "milk") {
      "<div class='positionText9'>"
-    outputText += "You have just added Archetype Abasi to your cart<br><br>";
+    OUTPUT.innerHTML += "You have just added Archetype Abasi to your cart<br><br>";
     " </div>";
   }
 
  "<div class='positionText9'>"
-  outputText += "These are the items on your cart:<br>";
+  OUTPUT.innerHTML += "These are the items on your cart:<br>";
 " </div>";
 
   for (var i = 0; i < classArray.length; i++) {
-    outputText += "list " + i + ": " + classArray[i] + "<br>";
+    OUTPUT.innerHTML += "list " + i + ": " + classArray[i] + "<br>";
   }
 
- "<div class='positionText9'>"
-  OUTPUT.innerHTML = outputText
- " </div>";
+
   
     }
  
