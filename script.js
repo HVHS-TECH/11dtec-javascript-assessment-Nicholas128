@@ -67,13 +67,13 @@ function getFormInput() {
     " </div>";
   }
 
- "<div class='positionText9'>"
-  OUTPUT.innerHTML += "These are the items on your cart:<br>";
-" </div>";
+   "<div class='positionText9'>"
+ OUTPUT.innerHTML += "These are the items in your cart:<br>";
+ " </div>";
 
-  for (var i = 0; i < classArray.length; i++) {
-    OUTPUT.innerHTML += "list " + i + ": " + classArray[i] + "<br>";
-  }
+for (var i = 0; i < classArray.length; i++) {
+    OUTPUT.innerHTML += classArray[i] + "<br>";
+}
 
 
   
