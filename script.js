@@ -4,7 +4,7 @@ console.log("Running project Neural DSP site")
 /*****************
  Main code
  ****************/
-
+var classArray = ["Archetype Gojira", "Archetype Petrucci", "Archetype Abasi"];
 
  /****************
   Functions
@@ -46,7 +46,7 @@ function getFormInput() {
   const item = document.getElementById("addToCartField").value;
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-  var classArray = ["Archetype Gojira", "Archetype Petrucci", "Archetype Abasi"];
+  
 
  
 
