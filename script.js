@@ -21,7 +21,7 @@ function getFormInput() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 
     if (money == "256") {
-        OUTPUT.innerHTML = "<div class='positionText7'><p>You have sucessfully purched Archetype Gojira for $" + money + "</p></div>";
+        OUTPUT.innerHTML += "<div class='positionText7'><p>You have sucessfully purched Archetype Gojira for $" + money + "</p></div>";
         console.log("Correct amount of money has been entered");
     } else {
         OUTPUT.innerHTML += "<div class='positionText7'><div class='textStyle'><p>Incorrect amount of money entered </p></div></div>";
@@ -53,7 +53,7 @@ function getFormInput() {
     cart.push(item);
 
     OUTPUT.innerHTML += "<div class='positionText9'>You have just added " + item + " to your cart</div><br><br>";
-    OUTPUT.innerHTML += "These are the items in your cart:<br>";
+    OUTPUT.innerHTML += "<div class='positionText10'>These are the items in your cart: </div><br>";
 
     for (var i = 0; i < cart.length; i++) {
     OUTPUT.innerHTML += cart[i] + "<br>";
