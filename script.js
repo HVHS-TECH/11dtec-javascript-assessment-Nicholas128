@@ -52,7 +52,7 @@ function getFormInput() {
 
     cart.push(item);
 
-    OUTPUT.innerHTML = "You have just added " + item + " to your cart<br><br>";
+    OUTPUT.innerHTML = "<div class='positionText9'>You have just added " + item + " to your cart</div><br><br>";
     OUTPUT.innerHTML += "These are the items in your cart:<br>";
 
     for (var i = 0; i < cart.length; i++) {
