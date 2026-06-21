@@ -41,7 +41,7 @@ function getFormInput() {
 
  
  
-
+   
     function addToCart() {
     
   const item = document.getElementById("addToCartField").value;
