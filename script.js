@@ -53,8 +53,8 @@ function getFormInput() {
 
 
   if (item == "Archetype Gojira") {
-       "<div class='positionText9'>"
-    OUTPUT.innerHTML = "<p>You have just added Archetype Gojira to your cart</p><br><br>";
+       
+    OUTPUT.innerHTML = "<div class='positionText9'><p>You have just added Archetype Gojira to your cart</p><br><br>";
      " </div>";
   }
   else if (item == "Archetype Petrucci") {    
