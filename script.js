@@ -54,17 +54,17 @@ function getFormInput() {
 
   if (item == "Archetype Gojira") {
        
-    OUTPUT.innerHTML = "<div class='positionText9'><p>You have just added Archetype Gojira to your cart</p><br><br>";
+    OUTPUT.innerHTML = "<div class='positionText9'><p>You have just added Archetype Gojira to your cart</p></div><br><br>";
      " </div>";
   }
   else if (item == "Archetype Petrucci") {    
      "<div class='positionText9'>"
-    OUTPUT.innerHTML += "<p>You have just added Archetype Petrucci to your cart</p><br><br>";
+    OUTPUT.innerHTML += "<div class='positionText9'><p>You have just added Archetype Petrucci to your cart</p></div><br><br>";
      " </div>";
   }
   else if (item == "Archetype Abasi") {
      "<div class='positionText9'>"
-    OUTPUT.innerHTML += "<p>You have just added Archetype Abasi to your cart</p><br><br>";
+    OUTPUT.innerHTML += "<div class='positionText9'><p>You have just added Archetype Abasi to your cart</p></div><br><br>";
     " </div>";
   }
 
