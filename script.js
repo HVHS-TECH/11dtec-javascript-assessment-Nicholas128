@@ -47,16 +47,12 @@ function getFormInput() {
   const item = document.getElementById("addToCartField").value;
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-  
-
- 
-
 
 
 
     cart.push(item);
 
-  
+    OUTPUT.innerHTML = "You have just added " + item + " to your cart<br><br>";
     OUTPUT.innerHTML += "These are the items in your cart:<br>";
 
     for (var i = 0; i < cart.length; i++) {
