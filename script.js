@@ -24,7 +24,7 @@ function getFormInput() {
         OUTPUT.innerHTML = "<div class='positionText7'><p>You have sucessfully purched Archetype Gojira for $" + money + "</p></div>";
         console.log("Correct amount of money has been entered");
     } else {
-        OUTPUT.innerHTML = "<div class='positionText7'><div class='textStyle'><p>Incorrect amount of money entered </p></div></div>";
+        OUTPUT.innerHTML += "<div class='positionText7'><div class='textStyle'><p>Incorrect amount of money entered </p></div></div>";
         console.log("Incorrect amount of money has been entered");
     }
 }
