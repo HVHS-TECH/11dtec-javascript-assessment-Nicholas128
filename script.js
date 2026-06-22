@@ -58,7 +58,7 @@ function getFormInput() {
     console.log("Message 'These are the items in your cart' is displaying");
 
        for (var i = 0; i < classArray.length; i++) {
-       outputText += "list " + i + ": " + classArray[i] + "<br>";
+       OUTPUT.innerHTML += "list " + i + ": " + classArray[i] + "<br>";
   }
 }
 
