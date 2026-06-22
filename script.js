@@ -60,6 +60,11 @@ function getFormInput() {
        for (var i = 0; i < classArray.length; i++) {
        OUTPUT.innerHTML += "list " + i + ": " + classArray[i] + "<br>";
   }
+
+  function showForm2() {
+    document.getElementById("buyArchetypeGojiraField").style.display = "block";
+    console.log("Displaying form")  
+}
 }
 
 
