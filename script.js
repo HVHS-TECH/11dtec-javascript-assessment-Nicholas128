@@ -52,14 +52,14 @@ function getFormInput() {
 
     cart.push(item);
 
-    OUTPUT.innerHTML += "<div class='positionText9'>You have just added " + item + " to your cart</div><ul>";
+    OUTPUT.innerHTML += "<div class='positionText9'>You have just added " + item + " to your cart</div><br><br>";
     console.log ("You have just added " + item + " to your cart")
-    OUTPUT.innerHTML += "<div class='positionText10'>These are the items in your cart: "+ item + "</div>";
+    OUTPUT.innerHTML += "<div class='positionText10'>These are the items in your cart: "+ item + "</div><br><br>";
     console.log("Message 'These are the items in your cart' is displaying");
 
-        for (var i = 0; i < cart.length; i++) {
-        OUTPUT.innerHTML += "<li>" + cart[i] + "</li>";
-    }
+       for (var i = 0; i < classArray.length; i++) {
+    outputText += "list " + i + ": " + classArray[i] + "<br>";
+  }
 }
 
 
