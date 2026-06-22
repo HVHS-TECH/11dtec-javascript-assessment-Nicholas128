@@ -57,9 +57,8 @@ function getFormInput() {
     OUTPUT.innerHTML += "<div class='positionText10'>These are the items in your cart: "+ item + "</div><br>";
     console.log("Message 'These are the items in your cart' is displaying");
 
-       for (var i = 0; i < classArray.length; i++) {
-       OUTPUT.innerHTML += "list " + i + ": " + classArray[i] + "<br>";
-  }
+  for (var i = 0; i < cart.length; i++) {
+    OUTPUT.innerHTML += cart[i] + "<br>";
 
   function showForm() {
     document.getElementById("buyArchetypeGojiraField").style.display = "block";
