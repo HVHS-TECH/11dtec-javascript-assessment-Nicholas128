@@ -71,10 +71,10 @@ function getFormInputPetrucci() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 
     if (money == "296") {
-        OUTPUT.innerHTML += "<div class='positionText7'><p>You have sucessfully purched Archetype Petrucci for $" + money + "</p></div>";
+        OUTPUT.innerHTML += "<div class='positionText11'><p>You have sucessfully purched Archetype Petrucci for $" + money + "</p></div>";
         console.log("Correct amount of money has been entered");
     } else {
-        OUTPUT.innerHTML += "<div class='positionText7'><div class='textStyle'><p>Incorrect amount of money entered </p></div></div>";
+        OUTPUT.innerHTML += "<div class='positionText11'><div class='textStyle'><p>Incorrect amount of money entered </p></div></div>";
         console.log("Incorrect amount of money has been entered");
     }
 
