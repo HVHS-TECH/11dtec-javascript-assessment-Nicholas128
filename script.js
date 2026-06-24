@@ -16,8 +16,8 @@ function showForm() {
 }
 
 
-function getFormInput2() {
-    const money = document.getElementById("moneyField").value;
+function getFormInputGojira() {
+   const money = document.getElementById("moneyFieldPetrucci").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 
     if (money == "256") {
@@ -66,8 +66,8 @@ function getFormInput2() {
     console.log("Displaying form")  
 }
 
-function getFormInput2() {
-    const money = document.getElementById("moneyField").value;
+function getFormInputPetrucci() {
+   const money = document.getElementById("moneyFieldPetrucci").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 
     if (money == "256") {
