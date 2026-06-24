@@ -16,7 +16,7 @@ function showForm() {
 }
 
 
-function getFormInput() {
+function getFormInput2() {
     const money = document.getElementById("moneyField").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 
@@ -64,11 +64,22 @@ function getFormInput() {
     document.getElementById("buyArchetypePetrucciField").style.display = "block";
     console.log("Displaying form")  
 }
+
+function getFormInput2() {
+    const money = document.getElementById("moneyField").value;
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
+
+    if (money == "256") {
+        OUTPUT.innerHTML += "<div class='positionText7'><p>You have sucessfully purched Archetype Petrucci for $" + money + "</p></div>";
+        console.log("Correct amount of money has been entered");
+    } else {
+        OUTPUT.innerHTML += "<div class='positionText7'><div class='textStyle'><p>Incorrect amount of money entered </p></div></div>";
+        console.log("Incorrect amount of money has been entered");
+    }
 }
 
-    }
+  }
 
-  
-    
- 
+}
+
     
