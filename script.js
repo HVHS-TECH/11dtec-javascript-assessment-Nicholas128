@@ -77,6 +77,13 @@ function getFormInputPetrucci() {
         OUTPUT.innerHTML += "<div class='positionText7'><div class='textStyle'><p>Incorrect amount of money entered </p></div></div>";
         console.log("Incorrect amount of money has been entered");
     }
+
+   function CountDownDays2() {
+    const item = document.getElementById("countDownDays")
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    var now = new Date().getTime();
+    const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
+    }
 }
 
   
