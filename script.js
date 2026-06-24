@@ -56,7 +56,7 @@ function getFormInputGojira() {
     console.log ("You have just added " + item + " to your cart")
     OUTPUT.innerHTML += "<div class='positionText10'>These are the items in your cart: "+ item + "</div><br>";
     console.log("Message 'These are the items in your cart' is displaying");
-
+    }
   for (var i = 0; i < cart.length; i++) {
     OUTPUT.innerHTML += cart[i] + "<br>";
 
@@ -79,7 +79,7 @@ function getFormInputPetrucci() {
     }
 }
 
-  }
+  
 
 
 
