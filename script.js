@@ -60,8 +60,8 @@ function getFormInput() {
   for (var i = 0; i < cart.length; i++) {
     OUTPUT.innerHTML += cart[i] + "<br>";
 
-  function showForm() {
-    document.getElementById("buyArchetypeGojiraField").style.display = "block";
+  function showForm2() {
+    document.getElementById("buyArchetypePetrucciField").style.display = "block";
     console.log("Displaying form")  
 }
 }

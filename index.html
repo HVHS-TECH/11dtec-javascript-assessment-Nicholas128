@@ -132,6 +132,12 @@ nav{
     top: 550px;
     left: 875px;
 }
+
+.form3{
+    position: absolute;
+    top: 575px;
+    left: 750px;
+}
 </style>
 <body>
 <nav>
@@ -184,9 +190,15 @@ nav{
 </div>
 
 
-<div class="button3"><button onClick="showForm()">Buy Now</button></div>
+<div class="button3"><button onClick="showForm2()">Buy Now</button></div>
 
-
+<div class="form3"> 
+<form id="buyArchetypePetrucciField" onsubmit="return false;" style="display:none;"> 
+<label for="buyArchetypePetrucci">Enter the correct amount of money $</label> 
+<input type="text" id="moneyField"> 
+<input type="Submit" onClick=getFormInput()> 
+</form> 
+</div>
 
 <div id="spaceForJavaScriptOutput"></div>
 
