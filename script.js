@@ -85,6 +85,11 @@ function getFormInputPetrucci() {
     const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
     }
 
+
+      function showForm3() {
+    document.getElementById("buyArchetypeAbasiField").style.display = "block";
+    console.log("Displaying form")  
+}
     function getFormInputAbasi() {
    const money = document.getElementById("moneyFieldAbasi").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
