@@ -60,6 +60,7 @@ function getFormInput2() {
   for (var i = 0; i < cart.length; i++) {
     OUTPUT.innerHTML += cart[i] + "<br>";
 
+  }
   function showForm2() {
     document.getElementById("buyArchetypePetrucciField").style.display = "block";
     console.log("Displaying form")  
@@ -80,6 +81,6 @@ function getFormInput2() {
 
   }
 
-}
+
 
     
