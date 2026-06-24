@@ -70,7 +70,7 @@ function getFormInputPetrucci() {
    const money = document.getElementById("moneyFieldPetrucci").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 
-    if (money == "256") {
+    if (money == "296") {
         OUTPUT.innerHTML += "<div class='positionText7'><p>You have sucessfully purched Archetype Petrucci for $" + money + "</p></div>";
         console.log("Correct amount of money has been entered");
     } else {
