@@ -87,7 +87,7 @@ function getFormInputPetrucci() {
 
 
       function showForm3() {
-    document.getElementById("buyArchetypeAbasiField").style.display = "block";
+    document.getElementById("moneyFieldAbasi").style.display = "block";
     console.log("Displaying form")  
 }
     function getFormInputAbasi() {
