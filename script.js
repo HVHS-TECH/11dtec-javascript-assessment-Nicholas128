@@ -85,6 +85,19 @@ function getFormInputPetrucci() {
     const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
     }
 
+    function getFormInputAbasi() {
+   const money = document.getElementById("moneyFieldAbasi").value;
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
+
+    if (money == "236") {
+        OUTPUT.innerHTML += "<div class='positionText12'><p>You have sucessfully purched Archetype Abasi for $" + money + "</p></div>";
+        console.log("Correct amount of money has been entered");
+    } else {
+        OUTPUT.innerHTML += "<div class='positionText12'><div class='textStyle'><p>Incorrect amount of money entered </p></div></div>";
+        console.log("Incorrect amount of money has been entered");
+    }
+
+}
 }
 
   
