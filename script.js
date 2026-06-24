@@ -94,7 +94,7 @@ function getFormInputPetrucci() {
    const money = document.getElementById("moneyFieldAbasi").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 
-    if (money == "236") {
+    if (money == "236") {     
         OUTPUT.innerHTML += "<div class='positionText12'><p>You have sucessfully purched Archetype Abasi for $" + money + "</p></div>";
         console.log("Correct amount of money has been entered");
     } else {
