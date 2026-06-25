@@ -20,7 +20,7 @@ function getPocketMoneyInput() {
     const userPocketMoney = Number(POCKETMONEY_FIELD.value);
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     const archetypeGojiraPrice = 256;
-    OUTPUT.innerHTML += "<p>Your amount is $" + userPocketMoney + "</p>";
+    OUTPUT.innerHTML += "<div class='positionText7'><p>Your amount is $" + userPocketMoney + "</p></div>";
        
     if (userPocketMoney >= archetypeGojiraPrice) {
         OUTPUT.innerHTML += "<div class='positionText7'><p>You can afford Archetype Gojira</p></div>";
@@ -42,7 +42,7 @@ function calculateChange(_money, _price) {
     return change;
     var change = calculateChange(userPocketMoney, 256);
 
-    OUTPUT.innerHTML += "<p>You will get $" + change + " change</p>";
+    OUTPUT.innerHTML += "<div class='positionText7'><p>You will get $" + change + " change</p></div>";
 
 }
 
