@@ -18,8 +18,20 @@ function getPocketMoneyInput() {
     const POCKETMONEY_FIELD = document.getElementById("pocketMoneyInput");
     const userPocketMoney = Number(POCKETMONEY_FIELD.value);
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
+    const archetypeGojiraPrice = 256;
     OUTPUT.innerHTML += "<p>Your amount is $" + userPocketMoney + "</p>";
+       
+    if (userPocketMoney >= chocolatePrice) {
+        OUTPUT.innerHTML += "<p>You can afford a Chocolate Bar</p>";
+
+
+        var change = calculateChange(userPocketMoney, chocolatePrice);
+
+        OUTPUT.innerHTML += "<p>You will get $" + change + " change</p>";
+
+    } else {
+        OUTPUT.innerHTML += "<p>You can't afford a Chocolate Bar</p>";
+    }
 }
 
 function calculateChange(_money, _price) {
