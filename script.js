@@ -103,6 +103,12 @@ function getFormInputPetrucci() {
     }
 
 }
+
+
+
+function displayBuyNow(_name, _money){
+OUTPUT.innerHTML += "<p>Your name is "</p>"
+}
 }
 
   
