@@ -192,11 +192,11 @@ nav{
 
 <div class="button"><button onClick="showForm()">Buy Now</button></div>
 
-<div class="form1">
-<form  onsubmit="return false;">
+<div class="form1" id="pocketMoneyForm" style="display:none;">
+<form onsubmit="return false;">
   <label for="formPocketMoney">Enter your amount of money:</label>
   <input type="text" id="pocketMoneyField" name="formPocketMoney">
-<input type="submit" onClick="getPocketMoneyInput()">
+  <input type="submit" onclick="getPocketMoneyInput()">
 </form>
 </div>
 
