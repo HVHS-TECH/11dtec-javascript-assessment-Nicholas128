@@ -28,6 +28,17 @@ function getPocketMoneyInput() {
     }
 }
 
+function calculateChange(_money, _price) {
+
+    var change = _money - _price;
+
+    return change;
+    var change = calculateChange(userPocketMoney, 256);
+
+    OUTPUT.innerHTML += "<p>You will get $" + change + " change</p>";
+
+}
+
 
     
 
