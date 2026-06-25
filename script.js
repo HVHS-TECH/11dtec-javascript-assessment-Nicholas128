@@ -11,21 +11,16 @@ var cart = [];
   Functions
   ****************/    
 function showForm() {
-    document.getElementById("pocketMoneyField").style.display = "block";
-    console.log("Displaying form");
+    document.getElementById("pocketMoneyForm").style.display = "block";
 }
 
 function getPocketMoneyInput() {
-    const POCKETMONEY_FIELD = document.getElementById("pocketMoneyField");
+    const POCKETMONEY_FIELD = document.getElementById("pocketMoneyInput");
     const userPocketMoney = Number(POCKETMONEY_FIELD.value);
 
-    OUTPUT.innerHTML += "<p>Your amount is $" + userPocketMoney + "</p>";
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    if (userPocketMoney >= 256) {
-        OUTPUT.innerHTML += "<p>You can afford Archetype Gojira</p>";
-    } else {
-        OUTPUT.innerHTML += "<p>You can't afford Archetype Gojira</p>";
-    }
+    OUTPUT.innerHTML += "<p>Your amount is $" + userPocketMoney + "</p>";
 }
 
 function calculateChange(_money, _price) {
