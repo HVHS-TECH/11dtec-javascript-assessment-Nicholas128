@@ -104,10 +104,17 @@ function getFormInputPetrucci() {
 
 }
 
+function getPocketMoneyInput() {
+    const POCKETMONEY_FIELD = document.getElementById("pocketMoneyField");
+    const userPocketMoney = Number(POCKETMONEY_FIELD.value);
 
+    OUTPUT.innerHTML += "<p>Your amount is $" + userPocketMoney + "</p>";
 
-function displayBuyNow(_money){
-OUTPUT.innerHTML += "<p>Your name is "</p>"
+    if (userPocketMoney >= 256) {
+        OUTPUT.innerHTML += "<p>You can afford Archetype Gojira</p>";
+    } else {
+        OUTPUT.innerHTML += "<p>You can't afford Archetype Gojira</p>";
+    }
 }
 }
 
