@@ -11,23 +11,23 @@ var cart = [];
   Functions
   ****************/    
 function showForm() {
-    document.getElementById("buyArchetypeGojiraField").style.display = "block";
+    document.getElementById("getPocketMoneyField").style.display = "block";
     console.log("Displaying form")  
 }
 
+function getPocketMoneyInput() {
+    const POCKETMONEY_FIELD = document.getElementById("pocketMoneyField");
+    const userPocketMoney = Number(POCKETMONEY_FIELD.value);
 
-function getFormInputGojira() {
-   const money = document.getElementById("moneyFieldGojira").value;
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
+    OUTPUT.innerHTML += "<p>Your amount is $" + userPocketMoney + "</p>";
 
-    if (money == "256") {
-        OUTPUT.innerHTML += "<div class='positionText7'><p>You have sucessfully purched Archetype Gojira for $" + money + "</p></div>";
-        console.log("Correct amount of money has been entered");
+    if (userPocketMoney >= 256) {
+        OUTPUT.innerHTML += "<p>You can afford Archetype Gojira</p>";
     } else {
-        OUTPUT.innerHTML += "<div class='positionText7'><div class='textStyle'><p>Incorrect amount of money entered </p></div></div>";
-        console.log("Incorrect amount of money has been entered");
+        OUTPUT.innerHTML += "<p>You can't afford Archetype Gojira</p>";
     }
 }
+
 
     
 
@@ -104,18 +104,7 @@ function getFormInputPetrucci() {
 
 }
 
-function getPocketMoneyInput() {
-    const POCKETMONEY_FIELD = document.getElementById("pocketMoneyField");
-    const userPocketMoney = Number(POCKETMONEY_FIELD.value);
 
-    OUTPUT.innerHTML += "<p>Your amount is $" + userPocketMoney + "</p>";
-
-    if (userPocketMoney >= 256) {
-        OUTPUT.innerHTML += "<p>You can afford Archetype Gojira</p>";
-    } else {
-        OUTPUT.innerHTML += "<p>You can't afford Archetype Gojira</p>";
-    }
-}
 }
 
   
