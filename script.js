@@ -21,7 +21,7 @@ function getPocketMoneyInput() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     const archetypeGojiraPrice = 256;
     OUTPUT.innerHTML += "<div class='positionText7'><p>Your amount is $" + userPocketMoney + "</p></div>";
-       
+         
     if (userPocketMoney >= archetypeGojiraPrice) {
         OUTPUT.innerHTML += "<div class='positionText7'><p>You can afford Archetype Gojira</p></div>";
 
