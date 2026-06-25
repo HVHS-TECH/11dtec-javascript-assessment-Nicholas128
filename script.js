@@ -17,7 +17,7 @@ function showForm() {
 
 
 function getFormInputGojira() {
-   const money = document.getElementById("moneyFieldPetrucci").value;
+   const money = document.getElementById("moneyFieldGojira").value;
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 
     if (money == "256") {
