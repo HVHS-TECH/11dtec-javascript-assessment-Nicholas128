@@ -11,7 +11,7 @@ var cart = [];
   Functions
   ****************/    
 function showForm() {
-    document.getElementById("getPocketMoneyField").style.display = "block";
+    document.getElementById("pocketMoneyField").style.display = "block";
     console.log("Displaying form")  
 }
 
