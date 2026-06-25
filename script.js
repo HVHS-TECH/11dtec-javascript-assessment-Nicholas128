@@ -21,16 +21,16 @@ function getPocketMoneyInput() {
     const archetypeGojiraPrice = 256;
     OUTPUT.innerHTML += "<p>Your amount is $" + userPocketMoney + "</p>";
        
-    if (userPocketMoney >= chocolatePrice) {
-        OUTPUT.innerHTML += "<p>You can afford a Chocolate Bar</p>";
+    if (userPocketMoney >= archetypeGojiraPrice) {
+        OUTPUT.innerHTML += "<p>You can afford Archetype Gojira</p>";
 
 
-        var change = calculateChange(userPocketMoney, chocolatePrice);
+        var change = calculateChange(userPocketMoney, archetypeGojiraPrice);
 
         OUTPUT.innerHTML += "<p>You will get $" + change + " change</p>";
 
     } else {
-        OUTPUT.innerHTML += "<p>You can't afford a Chocolate Bar</p>";
+        OUTPUT.innerHTML += "<p>You can't afford Archetype Gojira</p>";
     }
 }
 
