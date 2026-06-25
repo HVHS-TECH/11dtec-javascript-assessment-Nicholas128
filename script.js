@@ -17,7 +17,7 @@ function showForm() {
 function getPocketMoneyInput() {
     const POCKETMONEY_FIELD = document.getElementById("pocketMoneyInput");
     const userPocketMoney = Number(POCKETMONEY_FIELD.value);
-
+     
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
     OUTPUT.innerHTML += "<p>Your amount is $" + userPocketMoney + "</p>";
