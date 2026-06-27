@@ -52,6 +52,7 @@ function calculateChange(_money, _price) {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     var now = new Date().getTime();
     const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
+    
     }
 
  
