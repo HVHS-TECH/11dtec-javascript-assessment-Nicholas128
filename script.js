@@ -25,7 +25,7 @@ function getPocketMoneyInput() {
     if (userPocketMoney >= archetypeGojiraPrice) {
         var change = calculateChange(userPocketMoney, archetypeGojiraPrice);
 
-        OUTPUT.innerHTML += "<p><div class='positionText7'>You will get $" + change + " change</p></div>";
+        OUTPUT.innerHTML += "<p><div class='positionText13'>You will get $" + change + " change</p></div>";
 
     } else {
         OUTPUT.innerHTML += "<p><div class='positionText7'>You can't afford Archetype Gojira</p></div>";
