@@ -55,7 +55,7 @@ function calculateChange(_money, _price) {
     OUTPUT.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    OUTPUT.innerHTML = "EXPIRED";
   }
     }
 
