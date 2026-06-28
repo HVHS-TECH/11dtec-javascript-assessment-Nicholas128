@@ -6,7 +6,8 @@ console.log("Running project Neural DSP site")
  ****************/
 var classArray = ["Archetype Gojira", "Archetype Petrucci", "Archetype Abasi"];
 var cart = [];
-
+const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
+const timer = setInterval(countDownDays, 1000);
  /****************
   Functions
   ****************/    
