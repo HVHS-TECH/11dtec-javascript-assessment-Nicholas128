@@ -105,7 +105,25 @@ function getFormInputPetrucci() {
 }
 
 function CountDownDays2() {
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+var countDownDate = new Date();
+countDownDate.setDate(countDownDate.getDate() + 14);
+countDownDate = countDownDate.getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+OUTPUT.innerHTML = "<div class='positionText10'> <p>" +days + "d " + hours + "h " + minutes + "m " + seconds + "s <p></div>";
+
+  if (distance < 0) {
+    clearInterval(x);
+    OUTPUT.innerHTML = "Buy Archetype Gojira";
+  }
+}, 1000);
 }
 
 function showForm3() {
