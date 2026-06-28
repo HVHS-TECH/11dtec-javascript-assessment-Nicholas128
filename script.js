@@ -44,13 +44,13 @@ function calculateChange(_money, _price) {
 
 function countDownDays(){
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-var countDownDate = new Date("14d ").getTime();
+var countDownDate = new Day("14d ").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
 
   // Get today's date and time
-  var now = new Date().getTime();
+  var now = new Day().getTime();
 
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
