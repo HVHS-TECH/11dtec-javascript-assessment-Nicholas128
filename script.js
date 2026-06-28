@@ -9,7 +9,7 @@ var cart = [];
  /****************
   Functions
   ****************/    
-function showForm() {
+function showForm() {      
     document.getElementById("pocketMoneyForm").style.display = "block";
 }
 
