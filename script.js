@@ -43,47 +43,7 @@ function calculateChange(_money, _price) {
 }
 
 
-    
 
-    
-    function CountDownDays() {
-    const item = document.getElementById("countDownDays")
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-const endDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000);
-
-
-const timer = setInterval(countDownDays, 1000);
-
-function countDownDays() {
-
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-    const now = new Date().getTime();
-    const distance = endDate - now;
-
-  
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-   
-    OUTPUT.innerHTML =
-        "<div class='positionText7'>" +
-        days + "d " +
-        hours + "h " +
-        minutes + "m " +
-        seconds + "s" +
-        "</div>";
-
-
-    if (distance <= 0) {
-        clearInterval(timer);
-        OUTPUT.innerHTML = "<div class='positionText7'>Trial Expired</div>";
-    }
-}
-  }
     
 
  
