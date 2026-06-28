@@ -50,7 +50,9 @@ var countDownDate = new Day()("14d").getTime();
 var x = setInterval(function() {
 
   // Get today's date and time
-  var now = new Day().getTime();
+var countDownDate = new Date();
+countDownDate.setDate(countDownDate.getDate() + 14);
+countDownDate = countDownDate.getTime();
 
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
