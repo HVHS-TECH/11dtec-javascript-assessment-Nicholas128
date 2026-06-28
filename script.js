@@ -44,7 +44,7 @@ function calculateChange(_money, _price) {
 
 function countDownDays(){
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+var countDownDate = new Date("14d").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
