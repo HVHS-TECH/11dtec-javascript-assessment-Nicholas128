@@ -43,8 +43,6 @@ function calculateChange(_money, _price) {
 }
 
 function countDownDays(){
-
-const item = document.getElementById("countDownDaysField").value;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
 
