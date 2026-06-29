@@ -187,6 +187,54 @@ nav{
     left: 900px;
 }
 
+.positionText17{
+    position: absolute;
+    top: 580px;
+    left: 750px;
+}
+
+.positionText18{
+    position: absolute;
+    top: 615px;
+    left: 750px;
+}
+
+.form4{
+    position: absolute;
+    top: 575px;
+    left: 1450px;
+}
+
+.positionText19{
+    position: absolute;
+    top: 580px;
+    left: 1450px;
+}
+
+.positionText20{
+    position: absolute;
+    top: 615px;
+    left: 1450px;
+}
+
+.button6{
+    position: absolute;
+    top: 550px;
+    left:1600px; 
+}
+
+.positionText21{
+    position: absolute;
+    top: 560px;
+    left: 1550px;
+}
+
+.positionText22{
+    position: absolute;
+    top: 615px;
+    left: 1450px;
+}
+
 </style>
 <body>
 <nav>
@@ -219,7 +267,7 @@ nav{
 
 <div class="form1">
 <form id="pocketMoneyForm" onsubmit="return false;" style="display:none;">
-  <label for="formPocketMoney">Enter your amount of money:</label>
+  <label for="formPocketMoney">Enter your amount of money $</label>
   <input type="text" id="pocketMoneyInput" name="formPocketMoney">
   <input type="submit" value="Buy Now" onclick="getPocketMoneyInput()">
 </form>
@@ -237,28 +285,35 @@ nav{
 </form>
 </div>
 
-
 <div class="button3"><button onClick="showForm2()">Buy Now</button></div>
 
-<div class="form3"> 
-<form id="buyArchetypePetrucciField" onsubmit="return false;" style="display:none;"> 
-<label for="buyArchetypePetrucci">Enter the correct amount of money $</label> 
-<input type="text" id="moneyFieldPetrucci"> 
-<input type="Submit" onClick=getFormInputPetrucci()> 
-</form> 
+<div class="form3">
+<form id="pocketMoneyForm2" onsubmit="return false;" style="display:none;">
+  <label for="formPocketMoney2">Enter your amount of money $</label>
+  <input type="text" id="pocketMoneyInput2" name="formPocketMoney2">
+  <input type="submit" value="Buy Now" onclick="getPocketMoneyInput2()">
+</form>
 </div>
+
+
+
+
 
 <div class="button4"><button onClick="CountDownDays2()">14 day trial</button></div>
 
-<div class="form4"> 
-<form id="buyArchetypeAbasiField" onsubmit="return false;" style="display:none;"> 
-<label for="buyArchetypeAbasi">Enter the correct amount of money $</label> 
-<input type="text" id="moneyFieldAbasi"> 
-<input type="Submit" onClick=getFormInputAbasi()> 
-</form> 
-</div>
+
 
 <div class="button5"><button onClick="showForm3()">Buy Now</button></div>
+<div class="form4">
+<form id="pocketMoneyForm3" onsubmit="return false;" style="display:none;">
+  <label for="formPocketMoney3">Enter your amount of money $</label>
+  <input type="text" id="pocketMoneyInput3" name="formPocketMone3">
+  <input type="submit" value="Buy Now" onclick="getPocketMoneyInput3()">
+</form>
+</div>
+
+<div class="button6"><button onClick="CountDownDays3()">14 day trial</button></div>
+
 
 <div id="spaceForJavaScriptOutput"></div>
 
