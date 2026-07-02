@@ -67,7 +67,17 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
 }
     
 
- 
+
+ function addToCart(){
+  const item = document.getElementById("addToCartField").value;
+  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+  cart.push(item);
+
+  OUTPUT.innerHTML += "<div class='positionText9'>You have just added " + item + " to your cart</div><br><br>";
+    console.log ("You have just added " + item + " to your cart")
+    
+ }
  
    
     function addItemToCart() {
