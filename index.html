@@ -238,6 +238,7 @@ nav{
 .container{
     display: grid;
     grid-template-columns: auto auto auto; 
+    background-color: lightblue;
 }
 
 </style>
@@ -285,7 +286,7 @@ nav{
 <div class="container">
 <div class="form2">
 <form onsubmit="return false;">
-  <label for="addToCartField">Enter name of item to cart</label>
+ <div><label for="addToCartField">Enter name of item to cart</label></div> 
   <input type="text" id="addToCartField">
   <input type="submit" value="Add Item" onclick="addToCart()">
 </form>
