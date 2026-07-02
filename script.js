@@ -70,7 +70,7 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
  
  
    
-    function addToCart() {
+    function addItemToCart() {
     
   const item = document.getElementById("addToCartField").value;
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
