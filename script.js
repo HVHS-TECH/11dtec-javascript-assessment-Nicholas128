@@ -74,7 +74,7 @@ function addToCart() {
 
   cart.push(item);
 
-  OUTPUT.innerHTML += "<div class='positionText9'>You have just added " + item + " to your cart</div><br><br>";
+  OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
 }
  
