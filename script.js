@@ -68,16 +68,15 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
     
 
 
- function addToCart(){
-  const item = document.getElementById("addToCartField").value;
+function addToCart() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+  const item = "Archetype Gojira";
 
   cart.push(item);
 
-  OUTPUT.innerHTML += "<div class='positionText9'>You have just added Archetype Gojira to your cart</div><br><br>";
-    console.log ("You have just added Archetype Gojira to your cart")
-    
- }
+  OUTPUT.innerHTML += "<div class='positionText9'>You have just added " + item + " to your cart</div><br><br>";
+  console.log("You have just added " + item + " to your cart");
+}
  
    
     function addItemToCart() {
