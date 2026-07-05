@@ -75,7 +75,7 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
   cart.push(item);
 
   OUTPUT.innerHTML += "<div class='positionText9'>You have just added " + item + " to your cart</div><br><br>";
-    console.log ("You have just added " + item + " to your cart")
+    console.log ("You have just added Archetype Gojira to your cart")
     
  }
  
