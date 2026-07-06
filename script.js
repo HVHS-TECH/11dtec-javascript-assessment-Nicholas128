@@ -79,25 +79,7 @@ function addToCart() {
 }
  
    
-    function addItemToCart() {
     
-  const item = document.getElementById("addToCartField").value;
-  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-
-
-
-    cart.push(item);
-
-    OUTPUT.innerHTML += "<div class='positionText9'>You have just added " + item + " to your cart</div><br><br>";
-    console.log ("You have just added " + item + " to your cart")
-    OUTPUT.innerHTML += "<div class='positionText10'>These are the items in your cart: "+ item + "</div><br>";
-    console.log("Message 'These are the items in your cart' is displaying");
-    }
-  for (var i = 0; i < cart.length; i++) {
-    OUTPUT.innerHTML += cart[i] + "<br>";
-
-  }
   function showForm2() {
        document.getElementById("pocketMoneyForm2").style.display = "block";
     console.log("Displaying 2nd form")  
