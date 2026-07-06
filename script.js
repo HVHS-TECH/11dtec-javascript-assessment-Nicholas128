@@ -87,6 +87,16 @@ function addToCart2() {
   OUTPUT.innerHTML += "<div class='positionText24'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
 }
+
+function addToCart3() {
+  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+  const item = "Archetype Abasi";
+
+  cart.push(item);
+
+  OUTPUT.innerHTML += "<div class='positionText25'>You have just added " + item + " to your cart</div><br><br>";
+  console.log("You have just added " + item + " to your cart");
+}
  
    
     
