@@ -77,6 +77,16 @@ function addToCart() {
   OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
 }
+
+function addToCart2() {
+  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+  const item = "Archetype Petrucci";
+
+  cart.push(item);
+
+  OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div><br><br>";
+  console.log("You have just added " + item + " to your cart");
+}
  
    
     
