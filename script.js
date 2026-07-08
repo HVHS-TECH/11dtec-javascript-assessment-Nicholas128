@@ -76,6 +76,12 @@ function addToCart() {
 
   OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
+  
+  function checkOut(){
+  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+  OUTPUT.innerHTML += "<a href='checkOut.js'>Check out</a>"
+  console.log("Showing button");
+}
 }
 
 function addToCart2() {
@@ -211,7 +217,4 @@ OUTPUT.innerHTML = "<div class='positionText21'> <p>" +days + "d " + hours + "h 
 }, 1000);
 }
 
-function checkOut(){
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-<a href="checkOut.js">Check out</a>
-}
+
