@@ -67,7 +67,6 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
 }
     
 
-
 function addToCart() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
   const item = "Archetype Gojira";
@@ -76,13 +75,20 @@ function addToCart() {
 
   OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
-  
-  function checkOut(){
+
+
+  if (!document.getElementById("checkoutBtn")) {
+    OUTPUT.innerHTML += "<div class='button10'><button id='checkoutBtn' onclick='checkOut()'>Check Out</button></div>";
+  }
+}
+
+function checkOut() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-  OUTPUT.innerHTML += "<div class='button10'><button onclick='checkOut()'>Check Out</button></div>";
-  console.log("Showing button");   
+  OUTPUT.innerHTML += "<div>Checking out...</div>";
+  console.log("Checking out");
 }
-}
+
+
 
 function addToCart2() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
