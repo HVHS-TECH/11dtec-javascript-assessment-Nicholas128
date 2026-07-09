@@ -79,7 +79,7 @@ function addToCart() {
   
   function checkOut(){
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-  OUTPUT.innerHTML += ""
+  OUTPUT.innerHTML += "<div class='button10'><button onclick='checkOut()'>Check Out</button></div>";
   console.log("Showing button");   
 }
 }
