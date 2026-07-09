@@ -77,8 +77,8 @@ function addToCart() {
   console.log("You have just added " + item + " to your cart");
 
 
-  if (!document.getElementById("checkoutBtn")) {
-    OUTPUT.innerHTML += "<div class='button10'><button id='checkoutBtn' onclick='checkOut()'>Check Out</button></div>";
+  if (!document.getElementById("checkOutButton")) {
+    OUTPUT.innerHTML += "<div class='button10'><button id='checkOutButton' onclick='checkOut()'>Check Out</button></div>";
   }
 }
 
