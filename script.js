@@ -78,7 +78,7 @@ function addToCart() {
                      
 
   if (!document.getElementById("checkOutButton")) {
-    OUTPUT.innerHTML += "<div class='button10'><button id='checkOutButton' onclick='<a href='checkOut.js'>Check Out</button></div>";
+    OUTPUT.innerHTML += "<div class='button10'><button id='checkOutButton' onclick='<a href='checkOut.html'>Check Out</button></div>";
   }
 }
 
