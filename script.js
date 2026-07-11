@@ -27,7 +27,7 @@ function getPocketMoneyInput() {
         OUTPUT.innerHTML += "<p><div class='positionText13'>You will get $" + change + " change</p></div>";
 
     } else {
-        OUTPUT.innerHTML += "<p><div class='positionText14'>You can't afford Archetype Gojira</p></div>";
+        OUTPUT.innerHTML += "<p><div class='positionText13'>You can't afford Archetype Gojira</p></div>";
     }
 }
 
