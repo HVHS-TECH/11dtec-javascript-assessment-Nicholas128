@@ -84,7 +84,7 @@ function addToCart() {
 
 function checkOut() {
     console.log("Checking out");
-    OUTPUT.innerHTML += "<br><a href='checkOut.js'>Go to Checkout</a>";
+    
 }
 
 
