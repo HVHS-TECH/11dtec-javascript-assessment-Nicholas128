@@ -186,7 +186,7 @@ function getPocketMoneyInput3() {
         OUTPUT.innerHTML += "<p><div class='positionText20'>You will get $" + change + " change</p></div>";
 
     } else {
-        OUTPUT.innerHTML += "<p><div class='positionText22'>You can't afford Archetype Abasi</p></div>";
+        OUTPUT.innerHTML += "<p><div class='positionText20'>You can't afford Archetype Abasi</p></div>";
     }
 }
 
