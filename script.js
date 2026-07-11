@@ -78,15 +78,10 @@ function addToCart() {
                      
 
   if (!document.getElementById("checkOutButton")) {
-    OUTPUT.innerHTML += "<div class='button10'><button id='checkOutButton' onclick='checkOut()'>Check Out</button></div>";
+    OUTPUT.innerHTML += "<div class='button10'><button id='checkOutButton' onclick='<a href='checkOut.js'>Check Out</button></div>";
   }
 }
 
-function checkOut() {
-  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-  OUTPUT.innerHTML += "<a href='checkOut.js'>Checkout</a>";
-  console.log("Checking out");
-}
 
 
 
