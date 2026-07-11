@@ -83,8 +83,9 @@ function addToCart() {
 }
 
 function checkOut() {
-    console.log("Checking out");
-    
+  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+  
+  console.log("Checking out");
 }
 
 
