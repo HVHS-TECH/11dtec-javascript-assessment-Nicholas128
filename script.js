@@ -83,9 +83,8 @@ function addToCart() {
 }
 
 function checkOut() {
-  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-  
-  console.log("Checking out");
+    console.log("Checking out");
+    OUTPUT.innerHTML += "<br><a href='checkOut.js'>Go to Checkout</a>";
 }
 
 
