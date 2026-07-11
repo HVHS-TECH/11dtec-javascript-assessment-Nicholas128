@@ -66,7 +66,7 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
 
 }
     
-
+    
 function addToCart() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
   const item = "Archetype Gojira";
