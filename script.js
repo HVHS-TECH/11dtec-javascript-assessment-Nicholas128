@@ -138,7 +138,7 @@ function getPocketMoneyInput2() {
         OUTPUT.innerHTML += "<p><div class='positionText18'>You can't afford Archetype Petrucci</p></div>";
     }
 }
-
+      
 function calculateChange(_money, _price) {
 
     var change = _money - _price;
