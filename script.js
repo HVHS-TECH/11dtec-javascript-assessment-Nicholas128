@@ -45,6 +45,7 @@ function calculateChange(_money, _price) {
 function countDownDays(){
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+var countDownDate = new Date();
 countDownDate.setDate(countDownDate.getDate() + 14);
 countDownDate = countDownDate.getTime();
 
