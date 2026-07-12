@@ -107,6 +107,10 @@ function addToCart3() {
 
   OUTPUT.innerHTML += "<div class='positionText25'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
+
+  if (!document.getElementById("checkOutButton")) {
+    OUTPUT.innerHTML += "<div class='button10'><a href='checkOut.html'><button id='checkOutButton'>Check Out</button></a></div>";
+  }
 }
  
    
