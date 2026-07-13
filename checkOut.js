@@ -9,4 +9,8 @@ var cart = [];
  /*****************
   * Functions
  ******************/
-function checkOut() {}
+function checkOut() {
+  const item = document.getElementById("checkOutField").value;
+  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+}
