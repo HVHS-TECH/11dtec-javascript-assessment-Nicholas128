@@ -13,4 +13,7 @@ function checkOut() {
   const item = document.getElementById("checkOutField").value;
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+  for (var i = 0; i < classArray.length; i++) {
+    OUTPUT.innerHTML += "list " + i + ": " + classArray[i] + "<br>";
+  }
 }
