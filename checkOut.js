@@ -9,3 +9,4 @@ var cart = [];
  /*****************
   * Functions
  ******************/
+function checkOut() {}
