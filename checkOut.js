@@ -14,6 +14,6 @@ function checkOut() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
   for (var i = 0; i < classArray.length; i++) {
-    OUTPUT.innerHTML += "list " + i + ": " + classArray[i] + "<br>";
+    OUTPUT.innerHTML += "<p>list " + i + ": " + classArray[i] + "</p><br>";
   }
 }
