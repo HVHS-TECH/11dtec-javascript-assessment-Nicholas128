@@ -4,8 +4,7 @@ console.log("Running project Neural DSP site")
 /*****************
  Main code
  ****************/
-var classArray = ["Archetype Gojira", "Archetype Petrucci", "Archetype Abasi"];
-var cart = [];
+
  /****************
   Functions
   ****************/    
