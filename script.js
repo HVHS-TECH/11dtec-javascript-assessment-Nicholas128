@@ -82,8 +82,7 @@ function addToCart() {
   }
 
 }
-
-
+      
 
 
 function addToCart2() {
