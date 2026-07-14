@@ -77,8 +77,8 @@ function addToCart() {
   OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
                      
-   function checkOutButton() {
-    OUTPUT.innerHTML += "<div class='button10'><button onclick="<div class='city'>">Add To Cart</button></div>";
+   function city() {
+    OUTPUT.innerHTML += "<div class='city'></div>";
   }
 
 }
