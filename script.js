@@ -78,7 +78,7 @@ function addToCart() {
   console.log("You have just added " + item + " to your cart");
                      
    function city() {
-    OUTPUT.innerHTML += "<div class='city'></div>";
+    OUTPUT.innerHTML += "<div class='city'></div><br><br>";
   }
 
 }
@@ -95,7 +95,7 @@ function addToCart2() {
   console.log("You have just added " + item + " to your cart");
 
     function city() {
-    OUTPUT.innerHTML += "<div class='city'></div>";
+    OUTPUT.innerHTML += "<div class='city'></div><br><br>";
   }
 }
 
@@ -109,7 +109,7 @@ function addToCart3() {
   console.log("You have just added " + item + " to your cart");
 
    function city() {
-    OUTPUT.innerHTML += "<div class='city'></div>";
+    OUTPUT.innerHTML += "<div class='city'></div><br><br>";
   }
 }
  
