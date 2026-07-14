@@ -77,10 +77,10 @@ function addToCart() {
   OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
                      
-
-  if (!document.getElementById("checkOutButton")) {
-    OUTPUT.innerHTML += "<div class='button10'><div class='city'><button id='checkOutButton'>Check Out</button></a></div></div>";
+   function checkOutButton() {
+    OUTPUT.innerHTML += "<div class='button10'><button id='checkOutButton'>Check Out</button></a></div>";
   }
+
 }
 
 
@@ -96,7 +96,7 @@ function addToCart2() {
   console.log("You have just added " + item + " to your cart");
 
   if (!document.getElementById("checkOutButton")) {
-    OUTPUT.innerHTML += "<div class='button10'><div class='city'><button id='checkOutButton'>Check Out</button></a></div></div>";
+    OUTPUT.innerHTML += "<div class='button10'><a href='checkOut.html'><button id='checkOutButton'>Check Out</button></a></div>";
   }
 }
 
@@ -109,7 +109,9 @@ function addToCart3() {
   OUTPUT.innerHTML += "<div class='positionText25'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
 
-
+  if (!document.getElementById("checkOutButton")) {
+    OUTPUT.innerHTML += "<div class='button10'><a href='checkOut.html'><button id='checkOutButton'>Check Out</button></a></div>";
+  }
 }
  
    
