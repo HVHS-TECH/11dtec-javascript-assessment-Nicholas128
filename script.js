@@ -79,7 +79,7 @@ function addToCart() {
                      
 
   if (!document.getElementById("checkOutButton")) {
-    OUTPUT.innerHTML += "<div class='button10'><a href='checkOut.html'><button id='checkOutButton'>Check Out</button></a></div>";
+    OUTPUT.innerHTML += "<div class='button10'><div class='city'><button id='checkOutButton'>Check Out</button></a></div></div>";
   }
 }
 
