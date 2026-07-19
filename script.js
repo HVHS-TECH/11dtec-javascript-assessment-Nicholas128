@@ -74,6 +74,8 @@ function addToCart() {
 
   cart.push(item);
 
+  document.getElementById("checkoutButton").style.display = "block";
+
   OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div>";
   console.log("You have just added " + item + " to your cart");
                      
@@ -91,6 +93,8 @@ function addToCart2() {
 
   cart.push(item);
 
+  document.getElementById("checkoutButton").style.display = "block";
+
   OUTPUT.innerHTML += "<div class='positionText24'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
 
@@ -104,6 +108,8 @@ function addToCart3() {
   const item = "Archetype Abasi";
 
   cart.push(item);
+
+  document.getElementById("checkoutButton").style.display = "block";
 
   OUTPUT.innerHTML += "<div class='positionText25'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
