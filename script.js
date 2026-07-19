@@ -83,7 +83,7 @@ function addToCart() {
 
 }
       
-
+           
 
 function addToCart2() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
