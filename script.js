@@ -114,7 +114,7 @@ function addToCart3() {
 function city() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    OUTPUT.innerHTML += "<div class='city'><h1>Items in your cart</h1>";
+    OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1>";
 
     for (let i = 0; i < cart.length; i++) {
         OUTPUT.innerHTML += cart[i] + "<br>";
