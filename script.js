@@ -79,9 +79,7 @@ function addToCart() {
   OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div>";
   console.log("You have just added " + item + " to your cart");
                      
-   function city() {
-    OUTPUT.innerHTML += "<div class='city'>These are the items in your cart</div>";
-  }
+
 
 }
       
@@ -98,9 +96,6 @@ function addToCart2() {
   OUTPUT.innerHTML += "<div class='positionText24'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
 
-    function city() {
-    OUTPUT.innerHTML += "<div class='city'><p>These are the items in your cart</p></div>";
-  }
 }
 
 function addToCart3() {
@@ -114,9 +109,18 @@ function addToCart3() {
   OUTPUT.innerHTML += "<div class='positionText25'>You have just added " + item + " to your cart</div><br><br>";
   console.log("You have just added " + item + " to your cart");
 
-   function city() {
-    OUTPUT.innerHTML += "<div class='city'>These are the items in your cart</div>";
-  }
+}
+
+function city() {
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    OUTPUT.innerHTML += "<div class='city'><h3>Items in your cart</h3>";
+
+    for (let i = 0; i < cart.length; i++) {
+        OUTPUT.innerHTML += cart[i] + "<br>";
+    }
+
+    OUTPUT.innerHTML += "</div>";
 }
  
    
