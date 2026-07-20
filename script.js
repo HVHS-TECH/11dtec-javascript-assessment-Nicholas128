@@ -94,6 +94,12 @@ function addToCart2() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
   const item = "Archetype Petrucci";
 
+      if (cart.includes(item)) {
+        OUTPUT.innerHTML += "<div class='positionText28'>Error: You can't add " + item + " again because it is already in your cart.</div>";
+        console.log(item + " is already in the cart");
+        return;
+    }
+
   cart.push(item);
 
   document.getElementById("checkoutButton").style.display = "block";
@@ -106,6 +112,12 @@ function addToCart2() {
 function addToCart3() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
   const item = "Archetype Abasi";
+
+      if (cart.includes(item)) {
+        OUTPUT.innerHTML += "<div class='positionText29'>Error: You can't add " + item + " again because it is already in your cart.</div>";
+        console.log(item + " is already in the cart");
+        return;
+    }
 
   cart.push(item);
 
