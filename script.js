@@ -69,18 +69,23 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
     
     
 function addToCart() {
-  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-  const item = "Archetype Gojira";
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    const item = "Archetype Gojira";
 
-  cart.push(item);
+   
+    if (cart.includes(item)) {
+        OUTPUT.innerHTML += "<div class='positionText23'>Error: You can't add " + item + " again because it is already in your cart.</div>";
+        console.log(item + " is already in the cart");
+        return;
+    }
 
-  document.getElementById("checkoutButton").style.display = "block";
+    
+    cart.push(item);
 
-  OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div>";
-  console.log("You have just added " + item + " to your cart");
-                     
+    document.getElementById("checkoutButton").style.display = "block";
 
-
+    OUTPUT.innerHTML += "<div class='positionText23'>You have just added " + item + " to your cart</div>";
+    console.log("You have just added " + item + " to your cart");
 }
       
            
