@@ -120,6 +120,8 @@ function city() {
         OUTPUT.innerHTML += cart[i] + "<br>";
     }
 
+
+    
 }
  
    
