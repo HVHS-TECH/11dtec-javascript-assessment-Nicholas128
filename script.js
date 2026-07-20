@@ -113,6 +113,7 @@ function addToCart3() {
 
 function city() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    const amount = "";
 
     OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1>";
 
