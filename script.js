@@ -74,7 +74,7 @@ function addToCart() {
 
    
     if (cart.includes(item)) {
-        OUTPUT.innerHTML += "<div class='positionText23'>Error: You can't add " + item + " again because it is already in your cart.</div>";
+        OUTPUT.innerHTML += "<div class='positionText27'>Error: You can't add " + item + " again because it is already in your cart.</div>";
         console.log(item + " is already in the cart");
         return;
     }
