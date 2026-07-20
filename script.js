@@ -121,7 +121,7 @@ function city() {
     }
 
 
-    
+    OUTPUT.innerHTML += "<div class='positionText26'>Please enter $"+ + "into the form</div>";
 }
  
    
