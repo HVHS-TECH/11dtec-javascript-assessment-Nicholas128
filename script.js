@@ -80,7 +80,10 @@ function addToCart() {
     }
 
     
-    cart.push(item);
+    cart.push({
+    name: "Archetype Gojira",
+    price: 256
+    });
 
     document.getElementById("checkoutButton").style.display = "block";
 
@@ -100,7 +103,10 @@ function addToCart2() {
         return;
     }
 
-  cart.push(item);
+      cart.push({
+        name: "Archetype Gojira",
+        price: 256
+    });
 
   document.getElementById("checkoutButton").style.display = "block";
 
