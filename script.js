@@ -104,8 +104,8 @@ function addToCart2() {
     }
 
       cart.push({
-        name: "Archetype Gojira",
-        price: 256
+        name: "Archetype Petrucci",
+        price: 296
     });
 
   document.getElementById("checkoutButton").style.display = "block";
@@ -125,7 +125,10 @@ function addToCart3() {
         return;
     }
 
-  cart.push(item);
+      cart.push({
+        name: "Archetype Gojira",
+        price: 236
+    });
 
   document.getElementById("checkoutButton").style.display = "block";
 
