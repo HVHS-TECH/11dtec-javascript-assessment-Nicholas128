@@ -134,13 +134,13 @@ function city() {
 
 OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1></div>";
 
-for (let i = 0; i < cart.length; i++) {
+for (var i = 0; i < cart.length; i++) {
     OUTPUT.innerHTML += cart[i] + "<br>";
 }
 
   
 
-OUTPUT.innerHTML += "<div class='positionText26'>Please enter $" + amount + " into the form</div>";
+OUTPUT.innerHTML += "<div class='positionText26'><h2>Please enter $" + amount + " into the form</h2></div>";
 }
  
    
