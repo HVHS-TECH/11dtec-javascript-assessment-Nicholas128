@@ -143,7 +143,7 @@ function city() {
 
 OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1></div>";
 
- let total = 0;
+ var total = 0;
 
     for (var i = 0; i < cart.length; i++) {
         OUTPUT.innerHTML += cart[i].name + " - $" + cart[i].price + "<br>";
