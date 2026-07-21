@@ -132,14 +132,15 @@ function city() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     const amount = "";
 
-    OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1>";
+OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1>";
 
-    for (let i = 0; i < cart.length; i++) {
-        OUTPUT.innerHTML += cart[i] + "<br>";
-    }
+for (let i = 0; i < cart.length; i++) {
+    OUTPUT.innerHTML += cart[i] + "<br>";
+}
 
+OUTPUT.innerHTML += "</div>";   
 
-    OUTPUT.innerHTML += "<div class='city'><div class='positionText26'>Please enter $"+amount + "into the form</div></div>";
+OUTPUT.innerHTML += "<div class='positionText26'>Please enter $" + amount + " into the form</div>";
 }
  
    
