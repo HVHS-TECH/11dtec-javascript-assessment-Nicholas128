@@ -23,12 +23,7 @@ function getPocketMoneyInput() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     const archetypeGojiraPrice = 256;
 
-    function getNameInput() {
-    console.log("getNameInput works");
-    const NAME_FIELD = document.getElementById("enterNameInput");
-    const userName = Word(NAME_FIELD.value);
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
-}
+
     OUTPUT.innerHTML += "<div class='positionText7'><p>Your amount is $" + userPocketMoney + "</div></p>";
          
     if (userPocketMoney >= archetypeGojiraPrice) {
@@ -39,6 +34,17 @@ function getPocketMoneyInput() {
     } else {
         OUTPUT.innerHTML += "<p><div class='positionText13'>You can't afford Archetype Gojira. Please refresh the page when you have enough</p></div>";
     }
+}
+
+function getNameInput() {
+    console.log("getNameInput works");
+
+    const NAME_FIELD = document.getElementById("enterNameInput");
+    const userName = NAME_FIELD.value;
+
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+
 }
 
 function calculateChange(_money, _price) {
