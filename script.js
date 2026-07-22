@@ -266,7 +266,10 @@ OUTPUT.innerHTML = "<div class='positionText21'> <p>" +days + "d " + hours + "h 
 }, 1000);
 
 function getNameInput() {
-    
+console.log("getNameInput works");
+    const NAME_FIELD = document.getElementById("nameInput");
+    const userName = Word(NAME_FIELD.value);
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
 }
 
 }
