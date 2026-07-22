@@ -251,7 +251,8 @@ OUTPUT.innerHTML = "<div class='positionText16'> <p>" +days + "d " + hours + "h 
 
 function showForm3() {
 document.getElementById("pocketMoneyForm3").style.display = "block";
-console.log("Displaying 3nd form")      
+ document.getElementById("enterNameForm3").style.display = "block";
+console.log("Displaying 3rd form")      
 }
 
 function getPocketMoneyInput3() {
