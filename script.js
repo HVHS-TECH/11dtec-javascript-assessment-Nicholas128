@@ -9,9 +9,12 @@ var cart = [];
  /****************       
   Functions
   ****************/    
-function showForm() {      
+     
+    function showForm() {
     document.getElementById("pocketMoneyForm").style.display = "block";
+    document.getElementById("enterNameForm").style.display = "block";
 }
+
 
 function getPocketMoneyInput() {
     console.log("getPocketMoneyInput works");

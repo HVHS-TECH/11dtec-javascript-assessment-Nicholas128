@@ -315,6 +315,12 @@ background-color: #c4d5d8;
     color: rgb(255, 4, 4);
 }
 
+.form5{
+    position:absolute;
+    top:615px;
+    left:50px;
+}
+
 
 
 
@@ -390,13 +396,13 @@ background-color: #c4d5d8;
 </div>
 
 
-<div class="form5">
-<form id="enterName" onsubmit="return false;" style="display:none;">
-  <label for="enterName">Name: </label>
-  <input type="text" id="enterName" name="enterName">
-  <input type="submit" onclick="getNameInput()">
-</form>
-</div>
+     <div class="form5">
+     <form id="enterNameForm" onsubmit="return false;" style="display:none;">
+    <label for="enterNameInput">Name:</label>
+    <input type="text" id="enterNameInput" name="enterNameInput">
+    <input type="submit" value="Submit" onclick="getNameInput()">
+    </form>
+    </div>
 
 <div class="button6"><button onClick="CountDownDays3()">14 day trial</button></div>
 
