@@ -186,7 +186,7 @@ OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1>
        document.getElementById("pocketMoneyForm2").style.display = "block";
        document.getElementById("enterNameForm2").style.display = "block";
     console.log("Displaying 2nd form")  
-}
+}   
 
 function getPocketMoneyInput2() {
     console.log("getPocketMoneyInput2 works");
