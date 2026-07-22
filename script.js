@@ -19,6 +19,13 @@ function getPocketMoneyInput() {
     const userPocketMoney = Number(POCKETMONEY_FIELD.value);
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     const archetypeGojiraPrice = 256;
+
+    function getNameInput() {
+    console.log("getNameInput works");
+    const NAME_FIELD = document.getElementById("enterNameInput");
+    const userName = Word(NAME_FIELD.value);
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
+}
     OUTPUT.innerHTML += "<div class='positionText7'><p>Your amount is $" + userPocketMoney + "</div></p>";
          
     if (userPocketMoney >= archetypeGojiraPrice) {
@@ -265,12 +272,7 @@ OUTPUT.innerHTML = "<div class='positionText21'> <p>" +days + "d " + hours + "h 
   }
 }, 1000);
 
-function getNameInput() {
-console.log("getNameInput works");
-    const NAME_FIELD = document.getElementById("enterNameInput");
-    const userName = Word(NAME_FIELD.value);
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");    
-}
+
 
 }
 
