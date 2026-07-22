@@ -58,7 +58,7 @@ function getNameInput2() {
     OUTPUT.innerHTML += "<p><div class='positionText31'>Order Name: " + userName + "</div></p>";
 }
 
-function getNameInput2() {
+function getNameInput3() {
     console.log("getNameInput3 works");
 
     const NAME_FIELD = document.getElementById("enterNameInput3");
