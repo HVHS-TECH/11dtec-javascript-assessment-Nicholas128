@@ -150,8 +150,7 @@ OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1>
         total += cart[i].price;
     }
 
-    OUTPUT.innerHTML += "<br><div class='positionText26'><h2>Total: $" + total + "</h2></div>";
-    OUTPUT.innerHTML += "<div class='positionText26'><h2>Please enter $" + total + " into the form.</h2></div>";
+    OUTPUT.innerHTML += "<div class='positionText26'><h2>Total cost $" + total+  ".</h2></div>";
 }
  
    
