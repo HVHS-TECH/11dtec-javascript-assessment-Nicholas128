@@ -41,7 +41,8 @@ function getNameInput() {
 
     const NAME_FIELD = document.getElementById("enterNameInput");
     const userName = NAME_FIELD.value;
-    const
+     const Name = "Archetype Abasi";
+
 
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     
