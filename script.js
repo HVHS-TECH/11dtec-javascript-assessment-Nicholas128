@@ -41,9 +41,11 @@ function getNameInput() {
 
     const NAME_FIELD = document.getElementById("enterNameInput");
     const userName = NAME_FIELD.value;
+    const
 
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
+    
+    OUTPUT.innerHTML += "<p><div class='positionText30'>Order Name"+name + "</div></p>"
 
 }
 
