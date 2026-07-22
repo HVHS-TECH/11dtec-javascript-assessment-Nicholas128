@@ -184,7 +184,7 @@ function city() {
 
     for (var i = 0; i < cart.length; i++) {
         OUTPUT.innerHTML +=
-            "<div class='city'>" +
+            "<div class='positionText33'>" +
             cart[i].name + " - $" + cart[i].price +
             "</div>";
 
