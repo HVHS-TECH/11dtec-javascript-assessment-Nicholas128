@@ -58,6 +58,17 @@ function getNameInput2() {
     OUTPUT.innerHTML += "<p><div class='positionText31'>Order Name: " + userName + "</div></p>";
 }
 
+function getNameInput2() {
+    console.log("getNameInput3 works");
+
+    const NAME_FIELD = document.getElementById("enterNameInput3");
+    const userName = NAME_FIELD.value;
+
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    OUTPUT.innerHTML += "<p><div class='positionText32'>Order Name: " + userName + "</div></p>";
+}
+
 function calculateChange(_money, _price) {
 
     var change = _money - _price;
