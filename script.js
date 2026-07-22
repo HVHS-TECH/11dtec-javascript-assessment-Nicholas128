@@ -184,9 +184,9 @@ function city() {
 
     for (var i = 0; i < cart.length; i++) {
         OUTPUT.innerHTML +=
-            "<div class='positionText33'>" +
+            "<div class='positionText33'><h3>" +
             cart[i].name + " - $" + cart[i].price +
-            "</div>";
+            "</h3></div>";
 
         total += cart[i].price;
     }
