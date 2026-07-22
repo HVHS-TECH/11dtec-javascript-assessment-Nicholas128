@@ -264,6 +264,11 @@ OUTPUT.innerHTML = "<div class='positionText21'> <p>" +days + "d " + hours + "h 
     OUTPUT.innerHTML = "Buy Archetype Abasi";
   }
 }, 1000);
+
+function getNameInput() {
+    
+}
+
 }
 
 
