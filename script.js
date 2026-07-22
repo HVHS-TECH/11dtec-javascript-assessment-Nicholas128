@@ -176,19 +176,22 @@ function addToCart3() {
 }
 
 function city() {
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1></div>";
+    OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1></div>";
 
- var total = 0;        
+    var total = 0;
 
     for (var i = 0; i < cart.length; i++) {
-        OUTPUT.innerHTML += cart[i].name + " - $" + cart[i].price + "<br>";
+        OUTPUT.innerHTML +=
+            "<div class='city'>" +
+            cart[i].name + " - $" + cart[i].price +
+            "</div>";
+
         total += cart[i].price;
     }
 
-    OUTPUT.innerHTML += "<div class='positionText26'><h2>Total cost $" + total+  ".</h2></div>";
+    OUTPUT.innerHTML += "<div class='positionText26'><h2>Total cost $" + total + ".</h2></div>";
 }
  
    
