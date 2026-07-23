@@ -202,11 +202,12 @@ function city() {
 
     OUTPUT.innerHTML +="<div class='positionText26'><h2>Total cost $" + total + ".</h2></div>";
 
+}
+
     function buyItemsInCart(){
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
     document.getElementById("buyItemsInCart").style.display = "block";
-}
 }
 
 function buyItemsInCart(){
