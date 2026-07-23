@@ -185,6 +185,8 @@ function addToCart3() {
 function city() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+    document.getElementById("buyItemsInCart").style.display = "block";
+
     OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1></div>";
 
     var total = 0;
@@ -200,6 +202,10 @@ function city() {
 
     OUTPUT.innerHTML +=
         "<div class='positionText26'><h2>Total cost $" + total + ".</h2></div>";
+}
+
+function buyItemsInCart{
+    
 }
  
    
