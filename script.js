@@ -24,12 +24,13 @@ function getPocketMoneyInput() {
     const archetypeGojiraPrice = 256;
 
 
-    OUTPUT.innerHTML += "<div class='positionText7'><p>Your amount is $" + userPocketMoney + "</div></p>";
+    OUTPUT.innerHTML += "<div class='positionText7'><p>You paid $" + userPocketMoney + "</div></p>";
          
     if (userPocketMoney >= archetypeGojiraPrice) {
         var change = calculateChange(userPocketMoney, archetypeGojiraPrice);
 
         OUTPUT.innerHTML += "<p><div class='positionText13'>You will get $" + change + " change</p></div>";
+        OUTPUT.innerHTML +="<p><div class='positionText35'>Your 'imagainary' Archetype Gojira should start downloading soon</div></p>"
 
     } else {
         OUTPUT.innerHTML += "<p><div class='positionText13'>You can't afford Archetype Gojira. Please refresh the page when you have enough</p></div>";
@@ -44,7 +45,9 @@ function getNameInput() {
 
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    OUTPUT.innerHTML += "<p><div class='positionText30'>Order Name: " + userName + "</div></p>";
+    OUTPUT.innerHTML += "<p><div class='positionText30'>Recipt:</div></p>"
+
+    OUTPUT.innerHTML += "<p><div class='positionText34'>Order Name: " + userName + "</div></p>";
 }
 
 function getNameInput2() {
@@ -54,6 +57,8 @@ function getNameInput2() {
     const userName = NAME_FIELD.value;
 
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    OUTPUT.innerHTML += "<p><div class='positionText36'>Recipt:</div></p>"
 
     OUTPUT.innerHTML += "<p><div class='positionText31'>Order Name: " + userName + "</div></p>";
 }
@@ -65,6 +70,8 @@ function getNameInput3() {
     const userName = NAME_FIELD.value;
 
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    OUTPUT.innerHTML += "<p><div class='positionText38'>Recipt:</div></p>"
 
     OUTPUT.innerHTML += "<p><div class='positionText32'>Order Name: " + userName + "</div></p>";
 }
@@ -99,7 +106,7 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
 
   if (distance < 0) {
     clearInterval(x);
-    OUTPUT.innerHTML = "Buy Archetype Gojira";
+    OUTPUT.innerHTML = "Please Click the Buy Now button for Archetype Abasi";
   }
 }, 1000);
 
@@ -216,6 +223,8 @@ function getPocketMoneyInput2() {
 
         OUTPUT.innerHTML += "<p><div class='positionText18'>You will get $" + change + " change</p></div>";
 
+        OUTPUT.innerHTML +="<p><div class='positionText37'>Your 'imagainary' Archetype Petrucci should start downloading soon</div></p>"
+
     } else {
         OUTPUT.innerHTML += "<p><div class='positionText18'>You can't afford Archetype Petrucci</p></div>";
     }
@@ -248,7 +257,7 @@ OUTPUT.innerHTML = "<div class='positionText16'> <p>" +days + "d " + hours + "h 
 
   if (distance < 0) {
     clearInterval(x);
-    OUTPUT.innerHTML = "Buy Archetype Petrucci";
+    OUTPUT.innerHTML = "Please Click the Buy Now button for Archetype Petrucci";
   }
 }, 1000);
 }
@@ -271,6 +280,8 @@ function getPocketMoneyInput3() {
         var change = calculateChange(userPocketMoney, archetypeAbasiPrice);
 
         OUTPUT.innerHTML += "<p><div class='positionText20'>You will get $" + change + " change</p></div>";
+
+        OUTPUT.innerHTML +="<p><div class='positionText39'>Your 'imagainary' Archetype Abasi should start downloading soon</div></p>"
 
     } else {
         OUTPUT.innerHTML += "<p><div class='positionText20'>You can't afford Archetype Abasi</p></div>";
@@ -305,7 +316,7 @@ OUTPUT.innerHTML = "<div class='positionText21'> <p>" +days + "d " + hours + "h 
 
   if (distance < 0) {
     clearInterval(x);
-    OUTPUT.innerHTML = "Buy Archetype Abasi";
+    OUTPUT.innerHTML = "Please Click the Buy Now button for Archetype Abasi";
   }
 }, 1000);
 
