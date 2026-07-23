@@ -185,14 +185,21 @@ function addToCart3() {
 function city() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-
     OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1></div>";
 
     var total = 0;
 
-            OUTPUT.innerHTML += "<div style='position:absolute; top:" + (860 + i * 35) + "px; left:740px;'>" + "<h3>" + cart[i].name + " - $" + cart[i].price + "</h3>" +"</div>";
+    for (var i = 0; i < cart.length; i++) {
 
-    OUTPUT.innerHTML += "<div class='positionText26'><h2>Total cost $" + total + ".</h2></div>";
+        OUTPUT.innerHTML +=
+            "<div style='position:absolute; top:" + (860 + i * 35) + "px; left:740px;'>" +
+            "<h3>" + cart[i].name + " - $" + cart[i].price + "</h3>" + "</div>";
+
+        total += cart[i].price;
+    }
+
+    OUTPUT.innerHTML +=
+        "<div class='positionText26'><h2>Total cost $" + total + ".</h2></div>";
 }
  
    
