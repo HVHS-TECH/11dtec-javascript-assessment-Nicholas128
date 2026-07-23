@@ -171,7 +171,7 @@ function addToCart3() {
     }
 
       cart.push({
-        name: "Archetype Gojira",
+        name: "Archetype Abasi",
         price: 236
     });
 
