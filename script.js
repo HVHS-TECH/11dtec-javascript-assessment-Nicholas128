@@ -48,6 +48,8 @@ function getNameInput() {
     OUTPUT.innerHTML += "<p><div class='positionText30'>Recipt:</div></p>"
 
     OUTPUT.innerHTML += "<p><div class='positionText34'>Order Name: " + userName + "</div></p>";
+
+    if
 }
 
 function getNameInput2() {
