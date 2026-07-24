@@ -49,7 +49,9 @@ function getNameInput() {
 
     OUTPUT.innerHTML += "<p><div class='positionText34'>Order Name: " + userName + "</div></p>";
 
-    if
+    if (userName =!) {
+        OUTPUT.innterHTML += "<p><div class=''></div></p>";
+    }
 }
 
 function getNameInput2() {
