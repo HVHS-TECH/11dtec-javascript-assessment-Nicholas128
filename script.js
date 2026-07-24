@@ -77,7 +77,9 @@ function getNameInput2() {
         if (userName === "") {
         OUTPUT.innerHTML += "<p><div class='positionText44'>Please enter your name</div></p>";
         console.log("Please enter your name");
+        nameSubmitted = false;
     } else {
+        nameSubmitted = true;
         OUTPUT.innerHTML += "<p><div class='positionText36'>Receipt:</div></p>";
         OUTPUT.innerHTML += "<p><div class='positionText31'>Order Name: " + userName + "</div></p>";
     }
