@@ -321,7 +321,7 @@ function getPocketMoneyInput2() {
         OUTPUT.innerHTML +="<p><div class='positionText37'>Your 'imagainary' Archetype Petrucci should start downloading soon</div></p>"
 
     } else {
-        OUTPUT.innerHTML += "<p><div class='positionText18'>You can't afford Archetype Petrucci</p></div>";
+        OUTPUT.innerHTML += "<p><div class='positionText18'>You can't afford Archetype Petrucci, please refresh the page when you have enough</p></div>";
     }
 }
       
