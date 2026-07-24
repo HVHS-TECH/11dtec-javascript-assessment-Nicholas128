@@ -231,10 +231,9 @@ function buyItemsInCart(){
     document.getElementById("buyItemsInCartForm").style.display = "block";
 
     console.log("getPocketMoneyInput works");
-    const POCKETMONEY_FIELD = document.getElementById("pocketMoneyInput");
-    const userPocketMoney = Number(POCKETMONEY_FIELD.value);
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    const archetypeGojiraPrice = 256;
+    const BUYITEMSINCART_FIELD = document.getElementById("buyItemsInCart");
+    const buyItemsInCart = Number(BUYITEMSINCART_FIELD.value);
+    const itemsInCartPrice = "";
 
 
     OUTPUT.innerHTML += "<div class='positionText7'><p>You paid $" + userPocketMoney + "</div></p>";
