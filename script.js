@@ -242,10 +242,10 @@ function buyItemsInCart(){
         var change = calculateChange(buyItemsInCart, itemsInCartPrice);
 
         OUTPUT.innerHTML += "<p><div class='positionText13'>You will get $" + change + " change</p></div>";
-        OUTPUT.innerHTML +="<p><div class='positionText35'>Your 'imagainary'  +item+ should start downloading soon</div></p>"
+        OUTPUT.innerHTML +="<p><div class='positionText35'>Your 'imagainary'  "+item+ "should start downloading soon</div></p>"
 
     } else {
-        OUTPUT.innerHTML += "<p><div class='positionText13'>You can't afford Archetype Gojira. Please refresh the page when you have enough</p></div>";
+        OUTPUT.innerHTML += "<p><div class='positionText13'>You can't these items. Please refresh the page when you have enough</p></div>";
     }
 }
 
