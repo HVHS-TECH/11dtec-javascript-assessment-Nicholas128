@@ -337,6 +337,7 @@ function getPocketMoneyInput2() {
 
     } else {
         OUTPUT.innerHTML += "<p><div class='positionText18'>You can't afford Archetype Petrucci</p></div>";
+        console.log("You can't afford Archetype Petrucci")
     }
 }
       
