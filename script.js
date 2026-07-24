@@ -50,7 +50,7 @@ function getNameInput() {
     OUTPUT.innerHTML += "<p><div class='positionText34'>Order Name: " + userName + "</div></p>";
 
     if (userName !==) {
-        OUTPUT.innterHTML += "<p><div class=''></div></p>";
+        OUTPUT.innterHTML += "<p><div class='positionText43'>Please enter your name</div></p>";
     }
 }
 
