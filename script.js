@@ -6,6 +6,10 @@ console.log("Running project Neural DSP site")
  ****************/
 var classArray = ["Archetype Gojira", "Archetype Petrucci", "Archetype Abasi"];
 var cart = [];
+var nameSubmitted = false;
+var petrucciNameSubmitted = false;
+var abasiNameSubmitted = false;
+var checkoutNameSubmitted = false;
  /****************       
   Functions
   ****************/    
