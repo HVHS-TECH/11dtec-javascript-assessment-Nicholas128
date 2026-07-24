@@ -231,7 +231,7 @@ function buyItemsInCart(){
 
     console.log("buyItemsInCart works");
 
-    const BUYITEMSINCART_FIELD = document.getElementById("buyItemsInCart");
+    const BUYITEMSINCART_FIELD = document.getElementById("buyItemsInCartInput");
     const userMoney = Number(BUYITEMSINCART_FIELD.value);
 
 
