@@ -228,6 +228,8 @@ function city() {
 
     document.getElementById("buyItemsInCartForm").style.display = "block";
 
+   
+
     OUTPUT.innerHTML += "<div class='city'><div class='text'><h1>These are the items in your cart</h1></div></div>";
 
 
