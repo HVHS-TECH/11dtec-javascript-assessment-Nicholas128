@@ -57,9 +57,9 @@ function getNameInput() {
     if (userName === "") {
         OUTPUT.innerHTML += "<p><div class='positionText43'>Please enter your name</div></p>";
         console.log("Please enter your name");
-        nameSubmitted = false;
+        petrucciNameSubmitted = false;
     } else {
-        nameSubmitted = true;
+       petrucciNameSubmitted = true;
 
         OUTPUT.innerHTML += "<p><div class='positionText30'>Receipt:</div></p>";
         OUTPUT.innerHTML += "<p><div class='positionText34'>Order Name: " + userName + "</div></p>";
@@ -87,36 +87,34 @@ function getNameInput2() {
 }
 
 function getNameInput3() {
-    console.log("getNameInput3 works");
 
     const NAME_FIELD = document.getElementById("enterNameInput3");
     const userName = NAME_FIELD.value;
-
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
 
     if (userName === "") {
         OUTPUT.innerHTML += "<p><div class='positionText51'>Please enter your name</div></p>";
-        console.log("Please enter your name");
+        abasiNameSubmitted = false;
     } else {
+        abasiNameSubmitted = true;
+
         OUTPUT.innerHTML += "<p><div class='positionText38'>Receipt:</div></p>";
         OUTPUT.innerHTML += "<p><div class='positionText32'>Order Name: " + userName + "</div></p>";
     }
 }
 
 function getNameInput4() {
-    console.log("getNameInput4 works");
 
     const NAME_FIELD = document.getElementById("enterNameInput4");
     const userName = NAME_FIELD.value;
-
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
 
     if (userName === "") {
         OUTPUT.innerHTML += "<p><div class='positionText49'>Please enter your name</div></p>";
-        console.log("Please enter your name");
+        checkoutNameSubmitted = false;
     } else {
+        checkoutNameSubmitted = true;
+
         OUTPUT.innerHTML += "<p><div class='positionText49'>Receipt:</div></p>";
         OUTPUT.innerHTML += "<p><div class='positionText50'>Order Name: " + userName + "</div></p>";
     }
@@ -272,7 +270,10 @@ function buyItemsInCart(){
     const BUYITEMSINCART_FIELD = document.getElementById("buyItemsInCartInput");
     const userMoney = Number(BUYITEMSINCART_FIELD.value);
 
-
+     if (!checkoutNameSubmitted) {
+    OUTPUT.innerHTML += "<div class='positionText49'>Please submit your name first, and refresh the page.</div>";
+    return;
+}
     
     var totalPrice = 0;
     var itemsBought = "";
@@ -328,7 +329,7 @@ function getPocketMoneyInput2() {
     const archetypePetrucciPrice = 296;
     OUTPUT.innerHTML += "<div class='positionText17'><p>Your amount is $" + userPocketMoney + "</div></p>";
          
-        if (!nameSubmitted) {
+        if (!petrucciNameSubmitted) {
         OUTPUT.innerHTML += "<div class='positionText51'>Please submit your name first, and refresh the page.</div>";
         return;
     }
@@ -391,6 +392,12 @@ function getPocketMoneyInput3() {
     const userPocketMoney = Number(POCKETMONEY_FIELD.value);
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     const archetypeAbasiPrice = 236;
+
+    if (!abasiNameSubmitted) {
+    OUTPUT.innerHTML += "<div class='positionText51'>Please submit your name first, and refresh the page.</div>";
+    return;
+}
+
     OUTPUT.innerHTML += "<div class='positionText19'><p>Your amount is $" + userPocketMoney + "</div></p>";
          
     if (userPocketMoney >= archetypeAbasiPrice) {
