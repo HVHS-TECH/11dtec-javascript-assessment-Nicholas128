@@ -321,6 +321,11 @@ function getPocketMoneyInput2() {
     const archetypePetrucciPrice = 296;
     OUTPUT.innerHTML += "<div class='positionText17'><p>Your amount is $" + userPocketMoney + "</div></p>";
          
+        if (!nameSubmitted) {
+        OUTPUT.innerHTML += "<div class='positionText51'>Please submit your name first, and refresh the page.</div>";
+        return;
+    }
+
     if (userPocketMoney >= archetypePetrucciPrice) {
         var change = calculateChange(userPocketMoney, archetypePetrucciPrice);
 
