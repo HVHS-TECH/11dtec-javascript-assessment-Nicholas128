@@ -239,10 +239,10 @@ function buyItemsInCart(){
     OUTPUT.innerHTML += "<div class='positionText7'><p>You paid $" + userPocketMoney + "</div></p>";
          
     if (userPocketMoney >= archetypeGojiraPrice) {
-        var change = calculateChange(userPocketMoney, archetypeGojiraPrice);
+        var change = calculateChange(buyItemsInCart, itemsInCartPrice);
 
         OUTPUT.innerHTML += "<p><div class='positionText13'>You will get $" + change + " change</p></div>";
-        OUTPUT.innerHTML +="<p><div class='positionText35'>Your 'imagainary' Archetype Gojira should start downloading soon</div></p>"
+        OUTPUT.innerHTML +="<p><div class='positionText35'>Your 'imagainary'  +item+ should start downloading soon</div></p>"
 
     } else {
         OUTPUT.innerHTML += "<p><div class='positionText13'>You can't afford Archetype Gojira. Please refresh the page when you have enough</p></div>";
