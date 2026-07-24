@@ -106,7 +106,7 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
 
   if (distance < 0) {
     clearInterval(x);
-    OUTPUT.innerHTML += "Please Click the Buy Now button for Archetype Abasi";
+    OUTPUT.innerHTML += "Please Click the Buy Now button for Archetype Gojira";
   }
 }, 1000);
 
@@ -333,7 +333,7 @@ function undoButton(){
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 document.getElementById("undoButton").style.display = "block";
 
-OUTPUT.innerHTML +=
+OUTPUT.innerHTML += 
 }
 
 }
