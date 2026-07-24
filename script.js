@@ -83,9 +83,14 @@ function getNameInput3() {
 
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    OUTPUT.innerHTML += "<p><div class='positionText38'>Recipt:</div></p>"
 
-    OUTPUT.innerHTML += "<p><div class='positionText32'>Order Name: " + userName + "</div></p>";
+    if (userName === "") {
+        OUTPUT.innerHTML += "<p><div class='positionText44'>Please enter your name</div></p>";
+        console.log("Please enter your name");
+    } else {
+        OUTPUT.innerHTML += "<p><div class='positionText38'>Receipt:</div></p>";
+        OUTPUT.innerHTML += "<p><div class='positionText32'>Order Name: " + userName + "</div></p>";
+    }
 }
 
 function calculateChange(_money, _price) {
