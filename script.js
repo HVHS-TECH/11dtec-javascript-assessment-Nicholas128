@@ -115,6 +115,7 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
     
 function addToCart() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    document.getElementById("undoButton").style.display = "block";
     const item = "Archetype Gojira";
 
    
