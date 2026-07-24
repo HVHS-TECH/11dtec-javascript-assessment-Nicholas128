@@ -106,7 +106,7 @@ OUTPUT.innerHTML = "<div class='positionText15'> <p>" +days + "d " + hours + "h 
 
   if (distance < 0) {
     clearInterval(x);
-    OUTPUT.innerHTML = "Please Click the Buy Now button for Archetype Abasi";
+    OUTPUT.innerHTML += "Please Click the Buy Now button for Archetype Abasi";
   }
 }, 1000);
 
@@ -194,17 +194,11 @@ function city() {
     var total = 0;
 
     for (var i = 0; i < cart.length; i++) {
-        OUTPUT.innerHTML +=
-            "<div style='position:absolute; top:" + (860 + i * 35) +
-            "px; left:740px;'><div class='text2'><h3>" +
-            cart[i].name + " - $" + cart[i].price +
-            "</h3></div></div>";
-
-        total += cart[i].price;
+        OUTPUT.innerHTML += "<div style='position:absolute; top:" + (860 + i * 35) +"px; left:740px;'><div class='text2'><h3>" +cart[i].name + " - $" + cart[i].price +"</h3></div></div>";
+         total += cart[i].price;
     }
 
-    OUTPUT.innerHTML +=
-        "<div class='positionText26'><div class='text3'><h2>Total cost $" + total + "</h2></div></div>";
+    OUTPUT.innerHTML +="<div class='positionText26'><div class='text3'><h2>Total cost $" + total + "</h2></div></div>";
 
 
 }
@@ -272,7 +266,7 @@ OUTPUT.innerHTML = "<div class='positionText16'> <p>" +days + "d " + hours + "h 
 
   if (distance < 0) {
     clearInterval(x);
-    OUTPUT.innerHTML = "Please Click the Buy Now button for Archetype Petrucci";
+    OUTPUT.innerHTML += "Please Click the Buy Now button for Archetype Petrucci";
   }
 }, 1000);
 }
@@ -331,12 +325,15 @@ OUTPUT.innerHTML = "<div class='positionText21'> <p>" +days + "d " + hours + "h 
 
   if (distance < 0) {
     clearInterval(x);
-    OUTPUT.innerHTML = "Please Click the Buy Now button for Archetype Abasi";
+    OUTPUT.innerHTML += "Please Click the Buy Now button for Archetype Abasi";
   }
 }, 1000);
 
 function undoButton(){
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+document.getElementById("undoButton").style.display = "block";
 
+OUTPUT.innerHTML +=
 }
 
 }
