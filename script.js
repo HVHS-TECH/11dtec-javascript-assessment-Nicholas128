@@ -250,7 +250,7 @@ function buyItemsInCart(){
     OUTPUT.innerHTML +=  "<div class='positionText46'><p>You paid $" + userMoney + "</p></div>";
 
 
-    OUTPUT.innerHTML += "<div class='positionText48'><p>Items purchased:<br>" + itemsBought + "</p></div>";
+    OUTPUT.innerHTML += "<div class='positionText49'><p>Items purchased:<br>" + itemsBought + "</p></div>";
 
 
 
