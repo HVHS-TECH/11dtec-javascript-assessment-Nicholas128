@@ -335,7 +335,9 @@ OUTPUT.innerHTML = "<div class='positionText21'> <p>" +days + "d " + hours + "h 
   }
 }, 1000);
 
+function undoButton(){
 
+}
 
 }
 
