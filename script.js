@@ -226,27 +226,53 @@ function city() {
 
 
 function buyItemsInCart(){
+
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    document.getElementById("buyItemsInCartForm").style.display = "block";
+    console.log("buyItemsInCart works");
 
-    console.log("getPocketMoneyInput works");
     const BUYITEMSINCART_FIELD = document.getElementById("buyItemsInCart");
-    const buyItemsInCart = Number(BUYITEMSINCART_FIELD.value);
-    const itemsInCartPrice = "";
+    const userMoney = Number(BUYITEMSINCART_FIELD.value);
 
 
-    OUTPUT.innerHTML += "<div class='positionText46'><p>You paid $" + userPocketMoney + "</div></p>";
-         
-    if (userPocketMoney >= archetypeGojiraPrice) {
-        var change = calculateChange(buyItemsInCart, itemsInCartPrice);
+    
+    var totalPrice = 0;
+    var itemsBought = "";
 
-        OUTPUT.innerHTML += "<p><div class='positionText47'>You will get $" + change + " change</p></div>";
-        OUTPUT.innerHTML +="<p><div class='positionText48'>Your 'imagainary'  "+item+ "should start downloading soon</div></p>"
+    for (var i = 0; i < cart.length; i++) {
 
-    } else {
-        OUTPUT.innerHTML += "<p><div class='positionText47'>You can't these items. Please refresh the page when you have enough</p></div>";
+        totalPrice += cart[i].price;
+
+        itemsBought += cart[i].name + " - $" + cart[i].price + "<br>";
     }
+
+
+    OUTPUT.innerHTML +=  "<div class='positionText46'><p>You paid $" + userMoney + "</p></div>";
+
+
+    OUTPUT.innerHTML += "<div class='positionText48'><p>Items purchased:<br>" + itemsBought + "</p></div>";
+
+
+
+    if (userMoney >= totalPrice) {
+
+        var change = calculateChange(userMoney, totalPrice);
+
+
+        OUTPUT.innerHTML += "<div class='positionText47'><p>Total cost: $" + totalPrice + "</p></div>";
+
+
+        OUTPUT.innerHTML += "<div class='positionText47'><p>You will get $"  + change + " change</p></div>";
+
+
+        OUTPUT.innerHTML += "<div class='positionText48'><p>Your 'imaginary' plugins should start downloading soon</p></div>";
+
+    } 
+    
+    else {
+     OUTPUT.innerHTML += "<div class='positionText47'><p>You can't afford these items.</p></div>";
+    }
+
 }
 
  
