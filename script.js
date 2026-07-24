@@ -26,7 +26,7 @@ function getPocketMoneyInput() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
     if (!nameSubmitted) {
-        OUTPUT.innerHTML += "<div class='positionText43'>Please submit your name first.</div>";
+        OUTPUT.innerHTML += "<div class='positionText43'>Please submit your name first, and refresh the page.</div>";
         return;
     }
 
