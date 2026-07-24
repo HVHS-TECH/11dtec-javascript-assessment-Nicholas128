@@ -93,6 +93,8 @@ function getNameInput3() {
     }
 }
 
+
+
 function calculateChange(_money, _price) {
 
     var change = _money - _price;
