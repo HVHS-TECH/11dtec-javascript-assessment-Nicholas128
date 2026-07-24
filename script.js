@@ -354,6 +354,6 @@ function undoButton3(){
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 document.getElementById("undoButton3").style.display = "block";
 
-OUTPUT.innerHTML += "<div class='positionText41'><p>Archetype Abasi has been removed from your cart</p>"
+OUTPUT.innerHTML += "<div class='positionText42'><p>Archetype Abasi has been removed from your cart</p>"
 console.log("Archetype Abasi has been removed from your cart")
 }
