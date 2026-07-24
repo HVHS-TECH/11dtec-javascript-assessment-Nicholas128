@@ -229,6 +229,25 @@ function buyItemsInCart(){
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
     document.getElementById("buyItemsInCartForm").style.display = "block";
+
+    console.log("getPocketMoneyInput works");
+    const POCKETMONEY_FIELD = document.getElementById("pocketMoneyInput");
+    const userPocketMoney = Number(POCKETMONEY_FIELD.value);
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    const archetypeGojiraPrice = 256;
+
+
+    OUTPUT.innerHTML += "<div class='positionText7'><p>You paid $" + userPocketMoney + "</div></p>";
+         
+    if (userPocketMoney >= archetypeGojiraPrice) {
+        var change = calculateChange(userPocketMoney, archetypeGojiraPrice);
+
+        OUTPUT.innerHTML += "<p><div class='positionText13'>You will get $" + change + " change</p></div>";
+        OUTPUT.innerHTML +="<p><div class='positionText35'>Your 'imagainary' Archetype Gojira should start downloading soon</div></p>"
+
+    } else {
+        OUTPUT.innerHTML += "<p><div class='positionText13'>You can't afford Archetype Gojira. Please refresh the page when you have enough</p></div>";
+    }
 }
 
  
