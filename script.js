@@ -341,3 +341,11 @@ OUTPUT.innerHTML += "<div class='positionText40'><p>Archetype Gojira has been re
 console.log("Archetype Gojira has been removed from your cart")
 }
 
+function undoButton2(){
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+document.getElementById("undoButton2").style.display = "block";
+
+OUTPUT.innerHTML += "<div class='positionText41'><p>Archetype Petrucci has been removed from your cart</p>"
+console.log("Archetype Petrucci has been removed from your cart")
+}
+
