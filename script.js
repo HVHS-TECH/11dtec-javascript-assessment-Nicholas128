@@ -265,7 +265,7 @@ function buyItemsInCart(){
         OUTPUT.innerHTML += "<div class='positionText47'><p>You will get $"  + change + " change</p></div>";
 
 
-        OUTPUT.innerHTML += "<div class='positionText48'><p>Your 'imaginary' plugins should start downloading soon</p></div>";
+        OUTPUT.innerHTML += "<div class='positionText48'><p>Your 'imaginary' "+ itemsBought+" should start downloading soon</p></div>";
 
     } 
     
