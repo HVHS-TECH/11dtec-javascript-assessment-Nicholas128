@@ -162,6 +162,8 @@ if (cart.some(product => product.name === item)) {
 
 function addToCart3() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+  document.getElementById("undoButton3").style.display = "block";
+
   const item = "Archetype Abasi";
 
 if (cart.some(product => product.name === item)) {
