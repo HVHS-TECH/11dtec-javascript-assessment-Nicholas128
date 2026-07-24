@@ -265,7 +265,7 @@ function buyItemsInCart(){
 
    
     if (nameSubmitted === false) {
-        OUTPUT.innerHTML += "<div class='positionText45'><p>Please submit your name first before buying.</p></div>";
+        OUTPUT.innerHTML += "<div class='positionText51'><p>Please submit your name first before buying.</p></div>";
         console.log("Please submit your name first before buying.");
         return;
     }
