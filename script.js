@@ -329,6 +329,9 @@ OUTPUT.innerHTML = "<div class='positionText21'> <p>" +days + "d " + hours + "h 
   }
 }, 1000);
 
+
+}
+
 function undoButton(){
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 document.getElementById("undoButton").style.display = "block";
@@ -336,7 +339,4 @@ document.getElementById("undoButton").style.display = "block";
 OUTPUT.innerHTML += "<div class='positionText40'><p>Archetype Gojira has been removed from your cart</p>"
 console.log("Archetype Gojira has been removed from your cart")
 }
-
-}
-
 
