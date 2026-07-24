@@ -118,11 +118,10 @@ function addToCart() {
     const item = "Archetype Gojira";
 
    
-    if (cart.includes(item)) {
-        OUTPUT.innerHTML += "<div class='positionText27'>Error: You can't add " + item + " again because it is already in your cart.</div>";
-        console.log(item + " is already in the cart");
-        return;
-    }
+if (cart.some(product => product.name === item)) {
+    OUTPUT.innerHTML += "<div class='positionText27'>Error: You can't add " + item + " again because it is already in your cart.</div>";
+    return;
+}
 
     
     cart.push({
@@ -142,11 +141,10 @@ function addToCart2() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
   const item = "Archetype Petrucci";
 
-      if (cart.includes(item)) {
-        OUTPUT.innerHTML += "<div class='positionText28'>Error: You can't add " + item + " again because it is already in your cart.</div>";
-        console.log(item + " is already in the cart");
-        return;
-    }
+if (cart.some(product => product.name === item)) {
+    OUTPUT.innerHTML += "<div class='positionText27'>Error: You can't add " + item + " again because it is already in your cart.</div>";
+    return;
+}
 
       cart.push({
         name: "Archetype Petrucci",
@@ -164,11 +162,10 @@ function addToCart3() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
   const item = "Archetype Abasi";
 
-      if (cart.includes(item)) {
-        OUTPUT.innerHTML += "<div class='positionText29'>Error: You can't add " + item + " again because it is already in your cart.</div>";
-        console.log(item + " is already in the cart");
-        return;
-    }
+if (cart.some(product => product.name === item)) {
+    OUTPUT.innerHTML += "<div class='positionText27'>Error: You can't add " + item + " again because it is already in your cart.</div>";
+    return;
+}
 
       cart.push({
         name: "Archetype Abasi",
@@ -183,38 +180,42 @@ function addToCart3() {
 }
 
 function city() {
+
+    console.log("city is running");
+
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    document.getElementById("buyItemsInCart").style.display = "block";
+    document.getElementById("buyItemsInCartForm").style.display = "block";
 
-    OUTPUT.innerHTML += "<div class='city'><h1>These are the items in your cart</h1></div>";
+    OUTPUT.innerHTML += "<div class='city'><div class='text'><h1>These are the items in your cart</h1></div></div>";
+
+
 
     var total = 0;
 
     for (var i = 0; i < cart.length; i++) {
-
         OUTPUT.innerHTML +=
-            "<div style='position:absolute; top:" + (860 + i * 35) + "px; left:740px;'>" +
-            "<h3>" + cart[i].name + " - $" + cart[i].price + "</h3>" + "</div>";
+            "<div style='position:absolute; top:" + (860 + i * 35) +
+            "px; left:740px;'><div class='text2'><h3>" +
+            cart[i].name + " - $" + cart[i].price +
+            "</h3></div></div>";
 
         total += cart[i].price;
     }
 
-    OUTPUT.innerHTML +="<div class='positionText26'><h2>Total cost $" + total + ".</h2></div>";
+    OUTPUT.innerHTML +=
+        "<div class='positionText26'><div class='text3'><h2>Total cost $" + total + "</h2></div></div>";
+
 
 }
 
-    function buyItemsInCart(){
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-    document.getElementById("buyItemsInCart").style.display = "block";
-}
 
 function buyItemsInCart(){
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    document.getElementById("buyItemsInCart").style.display = "block";
+    document.getElementById("buyItemsInCartForm").style.display = "block";
 }
+
  
    
     

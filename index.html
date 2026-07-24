@@ -280,11 +280,12 @@ background-color: #c4d5d8;
   margin: 2px;
   padding: 10px;
   width:500px;
-  height:500px;
+  height:400px;
   position:absolute;
   top:800px;
   left: 725px;
   z-index:1;
+
 }
 
 
@@ -395,10 +396,25 @@ left:50px;
 }
    
 .form8{
-    position:absolute;
-    top:1075px;
-    left:745px;
-    z-index:2;
+    position:relative;
+    top:955px;
+    left:733px;
+   z-index:2;
+}
+
+.text{
+    position: relative;
+    z-index:3;
+}
+
+.text2{
+    position: relative;
+    z-index:4;
+}
+
+.text3{
+    position: relative;
+    z-index:5;
 }
   
 
@@ -499,13 +515,15 @@ left:50px;
     </form>
     </div>
 
-    <div class="form8">
-     <form id="buyItemsInCart" onsubmit="return false;" style="display:none;">
-    <label for="buyItemsInCart">Enter Your Amount Of Money:</label>
-    <input type="text" id="buyItemsInCart" name="buyItemsInCart">
-    <input type="submit" value="Submit" onclick="buyItemsInCart()">
-    </form>
-    </div>
+
+<div class="form8">
+<form id="buyItemsInCartForm" onsubmit="return false;" style="display:none;">
+<label for="buyItemsInCartInput">Enter Your Amount Of Money:</label>
+<input type="text"id="buyItemsInCartInput"name="buyItemsInCartInput">
+<input type="submit"value="Submit"onclick="buyItemsInCart()">
+</form>
+</div>
+
 <div class="button6"><button onClick="CountDownDays3()">14 day trial</button></div>
 
 <div class="button7"><button onclick="addToCart()">Add To Cart</button></div>
@@ -516,7 +534,7 @@ left:50px;
 
 <div class="button10" id="checkoutButton" style="display:none;"><button onclick="city()">Check Out</button></div>
 
-</div>
+
 <div id="spaceForJavaScriptOutput"></div>
 
 <script src="script.js"></script>
