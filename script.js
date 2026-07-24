@@ -333,7 +333,7 @@ function undoButton(){
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 document.getElementById("undoButton").style.display = "block";
 
-OUTPUT.innerHTML += 
+OUTPUT.innerHTML += "<div class='positionText40'><p>Archetype Gojira has been removed from your cart</p>"
 }
 
 }
