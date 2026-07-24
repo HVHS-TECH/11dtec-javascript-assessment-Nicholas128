@@ -334,6 +334,7 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 document.getElementById("undoButton").style.display = "block";
 
 OUTPUT.innerHTML += "<div class='positionText40'><p>Archetype Gojira has been removed from your cart</p>"
+console.log("Archetype Gojira has been removed from your cart")
 }
 
 }
