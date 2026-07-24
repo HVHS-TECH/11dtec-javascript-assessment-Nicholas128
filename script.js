@@ -142,7 +142,7 @@ function addToCart2() {
   const item = "Archetype Petrucci";
 
 if (cart.some(product => product.name === item)) {
-    OUTPUT.innerHTML += "<div class='positionText27'>Error: You can't add " + item + " again because it is already in your cart.</div>";
+    OUTPUT.innerHTML += "<div class='positionText28'>Error: You can't add " + item + " again because it is already in your cart.</div>";
     return;
 }
 
@@ -163,7 +163,7 @@ function addToCart3() {
   const item = "Archetype Abasi";
 
 if (cart.some(product => product.name === item)) {
-    OUTPUT.innerHTML += "<div class='positionText27'>Error: You can't add " + item + " again because it is already in your cart.</div>";
+    OUTPUT.innerHTML += "<div class='positionText29'>Error: You can't add " + item + " again because it is already in your cart.</div>";
     return;
 }
 
