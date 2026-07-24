@@ -259,8 +259,6 @@ function buyItemsInCart(){
         var change = calculateChange(userMoney, totalPrice);
 
 
-        OUTPUT.innerHTML += "<div class='positionText47'><p>Total cost: $" + totalPrice + "</p></div>";
-
 
         OUTPUT.innerHTML += "<div class='positionText47'><p>You will get $"  + change + " change</p></div>";
 
