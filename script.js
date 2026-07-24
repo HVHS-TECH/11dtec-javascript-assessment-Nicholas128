@@ -51,7 +51,7 @@ function getNameInput() {
 
   if (userName !== "") {
     OUTPUT.innerHTML += "<p><div class='positionText43'>Please enter your name</div></p>";
-    console.log("Please enter your name")
+    console.log("Please enter your name");
 }
 }
 
