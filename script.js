@@ -103,11 +103,19 @@ function getNameInput4() {
 
 
     if (userName === "") {
+
         OUTPUT.innerHTML += "<p><div class='positionText49'>Please enter your name</div></p>";
         console.log("Please enter your name");
+
     } else {
+
+
+        nameSubmitted = true;
+
         OUTPUT.innerHTML += "<p><div class='positionText49'>Receipt:</div></p>";
         OUTPUT.innerHTML += "<p><div class='positionText50'>Order Name: " + userName + "</div></p>";
+
+        console.log("Name submitted");
     }
 }
 
