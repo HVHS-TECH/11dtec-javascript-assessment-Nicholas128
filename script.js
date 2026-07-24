@@ -103,19 +103,11 @@ function getNameInput4() {
 
 
     if (userName === "") {
-
         OUTPUT.innerHTML += "<p><div class='positionText49'>Please enter your name</div></p>";
         console.log("Please enter your name");
-
     } else {
-
-
-        nameSubmitted = true;
-
         OUTPUT.innerHTML += "<p><div class='positionText49'>Receipt:</div></p>";
         OUTPUT.innerHTML += "<p><div class='positionText50'>Order Name: " + userName + "</div></p>";
-
-        console.log("Name submitted");
     }
 }
 
@@ -263,34 +255,45 @@ function buyItemsInCart(){
 
     console.log("buyItemsInCart works");
 
-   
-    if (nameSubmitted === false) {
-        OUTPUT.innerHTML += "<div class='positionText51'><p>Please submit your name first before buying.</p></div>";
-        console.log("Please submit your name first before buying.");
-        return;
-    }
-
     const BUYITEMSINCART_FIELD = document.getElementById("buyItemsInCartInput");
     const userMoney = Number(BUYITEMSINCART_FIELD.value);
 
-    OUTPUT.innerHTML += "<div class='positionText46'><p>You paid $" + userMoney + "</p></div>";
 
+    
     var totalPrice = 0;
     var itemsBought = "";
 
     for (var i = 0; i < cart.length; i++) {
+
         totalPrice += cart[i].price;
+
         itemsBought += cart[i].name + " - $" + cart[i].price + "<br>";
     }
 
+
+    OUTPUT.innerHTML +=  "<div class='positionText46'><p>You paid $" + userMoney + "</p></div>";
+
+
+
+
+
     if (userMoney >= totalPrice) {
+
         var change = calculateChange(userMoney, totalPrice);
 
-        OUTPUT.innerHTML += "<div class='positionText47'><p>You will get $" + change + " change</p></div>";
+
+
+        OUTPUT.innerHTML += "<div class='positionText47'><p>You will get $"  + change + " change</p></div>";
+
+
         OUTPUT.innerHTML += "<div class='positionText48'><p>Your 'imaginary' plugin/s should start downloading soon</p></div>";
-    } else {
-        OUTPUT.innerHTML += "<div class='positionText47'><p>You can't afford these items.</p></div>";
+
+    } 
+    
+    else {
+     OUTPUT.innerHTML += "<div class='positionText47'><p>You can't afford these items.</p></div>";
     }
+
 }
 
  
