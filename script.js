@@ -140,6 +140,7 @@ if (cart.some(product => product.name === item)) {
 
 function addToCart2() {
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+  document.getElementById("undoButton2").style.display = "block";
   const item = "Archetype Petrucci";
 
 if (cart.some(product => product.name === item)) {
