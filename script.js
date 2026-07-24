@@ -18,22 +18,27 @@ var cart = [];
 
 function getPocketMoneyInput() {
     console.log("getPocketMoneyInput works");
+
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    if (!nameSubmitted) {
+        OUTPUT.innerHTML += "<div class='positionText43'>Please submit your name first.</div>";
+        return;
+    }
+
     const POCKETMONEY_FIELD = document.getElementById("pocketMoneyInput");
     const userPocketMoney = Number(POCKETMONEY_FIELD.value);
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     const archetypeGojiraPrice = 256;
 
+    OUTPUT.innerHTML += "<div class='positionText7'><p>You paid $" + userPocketMoney + "</p></div>";
 
-    OUTPUT.innerHTML += "<div class='positionText7'><p>You paid $" + userPocketMoney + "</div></p>";
-         
     if (userPocketMoney >= archetypeGojiraPrice) {
         var change = calculateChange(userPocketMoney, archetypeGojiraPrice);
 
-        OUTPUT.innerHTML += "<p><div class='positionText13'>You will get $" + change + " change</p></div>";
-        OUTPUT.innerHTML +="<p><div class='positionText35'>Your 'imagainary' Archetype Gojira should start downloading soon</div></p>"
-
+        OUTPUT.innerHTML += "<div class='positionText13'><p>You will get $" + change + " change</p></div>";
+        OUTPUT.innerHTML += "<div class='positionText35'><p>Your 'imaginary' Archetype Gojira should start downloading soon</p></div>";
     } else {
-        OUTPUT.innerHTML += "<p><div class='positionText13'>You can't afford Archetype Gojira. Please refresh the page when you have enough</p></div>";
+        OUTPUT.innerHTML += "<div class='positionText13'><p>You can't afford Archetype Gojira. Please refresh the page when you have enough</p></div>";
     }
 }
 
