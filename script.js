@@ -93,6 +93,24 @@ function getNameInput3() {
     }
 }
 
+function getNameInput4() {
+    console.log("getNameInput4 works");
+
+    const NAME_FIELD = document.getElementById("enterNameInput4");
+    const userName = NAME_FIELD.value;
+
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+
+    if (userName === "") {
+        OUTPUT.innerHTML += "<p><div class='positionText49'>Please enter your name</div></p>";
+        console.log("Please enter your name");
+    } else {
+        OUTPUT.innerHTML += "<p><div class='positionText50'>Receipt:</div></p>";
+        OUTPUT.innerHTML += "<p><div class='positionText51'>Order Name: " + userName + "</div></p>";
+    }
+}
+
 
 
 function calculateChange(_money, _price) {
