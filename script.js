@@ -14,7 +14,8 @@ var checkoutNameSubmitted = false;
   Functions
   ****************/    
      
-    function showForm() {
+function showForm() {
+    nameSubmitted = false;
     document.getElementById("pocketMoneyForm").style.display = "block";
     document.getElementById("enterNameForm").style.display = "block";
 }
@@ -242,6 +243,9 @@ function city() {
 
     document.getElementById("enterNameForm4").style.display = "block";
 
+    checkoutNameSubmitted = false;
+
+
     OUTPUT.innerHTML += "<div class='city'><div class='text'><h1>These are the items in your cart</h1></div></div>";
 
 
@@ -309,11 +313,12 @@ function buyItemsInCart(){
  
    
     
-  function showForm2() {
-       document.getElementById("pocketMoneyForm2").style.display = "block";
-       document.getElementById("enterNameForm2").style.display = "block";
-    console.log("Displaying 2nd form")  
-}   
+function showForm2() {
+    petrucciNameSubmitted = false;
+
+    document.getElementById("pocketMoneyForm2").style.display = "block";
+    document.getElementById("enterNameForm2").style.display = "block";
+}  
 
 function getPocketMoneyInput2() {
     console.log("getPocketMoneyInput2 works");
@@ -374,9 +379,10 @@ OUTPUT.innerHTML = "<div class='positionText16'> <p>" +days + "d " + hours + "h 
 }
 
 function showForm3() {
-document.getElementById("pocketMoneyForm3").style.display = "block";
- document.getElementById("enterNameForm3").style.display = "block";
-console.log("Displaying 3rd form")      
+    abasiNameSubmitted = false;
+
+    document.getElementById("pocketMoneyForm3").style.display = "block";
+    document.getElementById("enterNameForm3").style.display = "block";
 }
 
 function getPocketMoneyInput3() {
