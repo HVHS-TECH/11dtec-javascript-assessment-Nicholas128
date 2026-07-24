@@ -226,6 +226,8 @@ function city() {
 
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+    
+
     document.getElementById("buyItemsInCartForm").style.display = "block";
 
    
