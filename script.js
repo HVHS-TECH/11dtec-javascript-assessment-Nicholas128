@@ -42,19 +42,18 @@ function getNameInput() {
 
     const NAME_FIELD = document.getElementById("enterNameInput");
     const userName = NAME_FIELD.value;
-
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
 
     if (userName === "") {
         OUTPUT.innerHTML += "<p><div class='positionText43'>Please enter your name</div></p>";
         console.log("Please enter your name");
+        nameSubmitted = false;
     } else {
+        nameSubmitted = true;
+
         OUTPUT.innerHTML += "<p><div class='positionText30'>Receipt:</div></p>";
         OUTPUT.innerHTML += "<p><div class='positionText34'>Order Name: " + userName + "</div></p>";
     }
-
-
 }
 
 function getNameInput2() {
