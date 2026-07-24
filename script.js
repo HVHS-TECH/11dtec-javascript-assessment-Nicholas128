@@ -157,7 +157,7 @@ function addToCart() {
 
    
 if (cart.some(product => product.name === item)) {
-    OUTPUT.innerHTML += "<div class='positionText27'>Error: You can't add " + item + " again because it is already in your cart. Please Refresh your page.</div>";
+    OUTPUT.innerHTML += "<div class='positionText27'>Error: You can't add " + item + " again because it is already in your cart. Please Refresh your page.   </div>";
     return;
 }
 
