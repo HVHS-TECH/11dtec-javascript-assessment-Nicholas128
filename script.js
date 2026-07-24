@@ -340,6 +340,8 @@ function undoButton(){
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 document.getElementById("undoButton").style.display = "block";
 
+ cart = cart.filter(product => product.name !== "Archetype Gojira");
+
 OUTPUT.innerHTML += "<div class='positionText40'><p>Archetype Gojira has been removed from your cart</p>"
 console.log("Archetype Gojira has been removed from your cart")
 }
@@ -348,6 +350,8 @@ function undoButton2(){
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 document.getElementById("undoButton2").style.display = "block";
 
+ cart = cart.filter(product => product.name !== "Archetype Petrucci");
+
 OUTPUT.innerHTML += "<div class='positionText41'><p>Archetype Petrucci has been removed from your cart</p>"
 console.log("Archetype Petrucci has been removed from your cart")
 }
@@ -355,6 +359,8 @@ console.log("Archetype Petrucci has been removed from your cart")
 function undoButton3(){
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 document.getElementById("undoButton3").style.display = "block";
+
+ cart = cart.filter(product => product.name !== "Archetype Abasi");
 
 OUTPUT.innerHTML += "<div class='positionText42'><p>Archetype Abasi has been removed from your cart</p>"
 console.log("Archetype Abasi has been removed from your cart")
