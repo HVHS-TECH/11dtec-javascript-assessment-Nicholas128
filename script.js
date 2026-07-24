@@ -65,9 +65,14 @@ function getNameInput2() {
 
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    OUTPUT.innerHTML += "<p><div class='positionText36'>Recipt:</div></p>"
 
-    OUTPUT.innerHTML += "<p><div class='positionText31'>Order Name: " + userName + "</div></p>";
+        if (userName === "") {
+        OUTPUT.innerHTML += "<p><div class='positionText44'>Please enter your name</div></p>";
+        console.log("Please enter your name");
+    } else {
+        OUTPUT.innerHTML += "<p><div class='positionText36'>Receipt:</div></p>";
+        OUTPUT.innerHTML += "<p><div class='positionText31'>Order Name: " + userName + "</div></p>";
+    }
 }
 
 function getNameInput3() {
